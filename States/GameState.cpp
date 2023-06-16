@@ -73,7 +73,7 @@ void GameState::initKeybinds() {
 
 void GameState::initTextures() {
 
-    if (!this->textures["PLAYER_SHEET"].loadFromFile("../Assets/Sprites/Player/Idle.png")) {
+    if (!this->textures["PLAYER_SHEET"].loadFromFile("../Assets/Sprites/Player/IdleAndRun.png")) {
         std::cerr << "ERROR::NON_CRITICAL::GAMESTATE::COULD_NOT_LOAD_PLAYER_IDLE_TEXTURE" << std::endl;
     }
 

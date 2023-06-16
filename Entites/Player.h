@@ -15,6 +15,7 @@ public:
 
     //Functions
     virtual void update(const float &deltaTime);
+    void setSpriteSize(sf::Sprite &sprite, float scaleX, float scaleY);
 
 private:
     //Variables

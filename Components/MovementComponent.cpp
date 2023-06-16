@@ -17,6 +17,14 @@ MovementComponent::~MovementComponent() {
 
 //functions
 
+const bool MovementComponent::idle() const {
+
+    if (this->velocity.x == 0.f && this->velocity.y == 0.f)
+        return true;
+
+    return false;
+}
+
 //update movement component
 void MovementComponent::update(const float &deltaTime) {
 
@@ -85,3 +93,5 @@ const sf::Vector2f &MovementComponent::getVelocity() const {
 
     return this->velocity;
 }
+
+

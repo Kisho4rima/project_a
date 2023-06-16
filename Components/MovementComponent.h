@@ -29,8 +29,10 @@ public:
     const sf::Vector2f &getVelocity() const;
 
     //functions
+    const bool idle() const;
     void move(const float x, const float y, const float &deltaTime);
     void update(const float &deltaTime);
+
 
 private:
     sf::Sprite &sprite;
