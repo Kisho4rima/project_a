@@ -13,20 +13,19 @@ State::~State() = default;
 
 
 
-const bool &State::getQuit() const {
-
+const bool &State::getQuit() const
+{
     return this->quit;
 }
 
-void State::endState() {
-
+void State::endState()
+{
     this->quit = true;
 }
 
-void State::updateMousePos() {
-
+void State::updateMousePos()
+{
     this->mousePosScreen = sf::Mouse::getPosition();
     this->mousePosWindow = sf::Mouse::getPosition(*this->window);
     this->mousePosView = this->window->mapPixelToCoords(sf::Mouse::getPosition());
-
 }

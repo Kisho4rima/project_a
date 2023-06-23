@@ -56,4 +56,10 @@ void Entity::createAnimationComponent(sf::Texture &texture_sheet) {
 
 }
 
+void Entity::setSpriteSize(sf::Sprite &sprite, float scaleX, float scaleY)
+{
+    sprite.setScale(scaleX, scaleY);
+    //sprite.setTextureRect(sf::Rect(scaleX, scaleY));
+}
+
 

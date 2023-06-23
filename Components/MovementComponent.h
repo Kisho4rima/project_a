@@ -22,15 +22,24 @@
 
 class MovementComponent {
 public:
+    //Nimmt als Parameter 6sprite, max Geschwindigkeit, Beschleunigung und Verzögerung
     MovementComponent(sf::Sprite &sprite, float maxVelocity, float acceleration, float deceleration);
     ~MovementComponent();
 
     //Accessor
+
+    //Gibt die aktuelle Geschwindigkeit des Sprites zurück
     const sf::Vector2f &getVelocity() const;
 
     //functions
+
     const bool idle() const;
+    const bool moving();
+    const bool movingLeft();
+    const bool movingRight();
+    //const bool jumping();
     void move(const float x, const float y, const float &deltaTime);
+    //Updated sprite position basierend auf auf aktueller Geschwindigkeit, Beschleunigung und Verzögerung
     void update(const float &deltaTime);
 
 

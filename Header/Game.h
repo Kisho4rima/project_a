@@ -52,8 +52,6 @@ private:
     void initWindow();
     void initKeys();
     void initStates();
-
-
 };
 
 

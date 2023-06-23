@@ -35,8 +35,6 @@ private:
     void initFonts();
     void initKeybinds();
     void initButtons();
-
-
 };
 
 

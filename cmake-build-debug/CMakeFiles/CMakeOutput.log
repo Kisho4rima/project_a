@@ -440,3 +440,32 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: C:/Users/amirf/Documents/project_a/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m2te35
+
+Run Build Command(s):C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/ninja/win/x64/ninja.exe cmTC_8f0a7 && [1/2] Building C object CMakeFiles/cmTC_8f0a7.dir/src.c.obj
+[2/2] Linking C executable cmTC_8f0a7.exe
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+

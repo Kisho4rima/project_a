@@ -16,6 +16,8 @@ public:
 
     //Functions
     virtual void setPosition(const float x, const float y);
+    //Ich bin nicht sicher ob das nur für den Sprite namens sprite gilt oder auch auf andere Sprites klappen wird.
+    virtual void setSpriteSize(sf::Sprite &sprite, float scaleX, float scaleY);
     virtual void move(const float dir_x, const float dir_y, const float deltaTime);
     virtual void update(const float& deltaTime);
     virtual void render(sf::RenderTarget* target);

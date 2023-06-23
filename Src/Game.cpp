@@ -3,42 +3,40 @@
 #include <sstream>
 
 //Constructor and Destructor
-Game::Game() {
-
+Game::Game()
+{
     this->initWindow();
     this->initKeys();
     this->initStates();
-
 }
 
-Game::~Game() {
-
+Game::~Game()
+{
     delete this->window;
 
-    while(!this->states.empty()){
-
+    while(!this->states.empty())
+    {
         delete this->states.top();
         this->states.pop();
     }
-
 }
 
 
 //Functions
 
-void Game::endApplication(){
-
+void Game::endApplication()
+{
     std::cout << "End Application\n";
 }
 
-void Game::updateDeltaTime() {
+void Game::updateDeltaTime()
+{
     //Updates deltaTime with the time it takes to update and render one frame
     this->deltaTime = this->deltaTimeClock.restart().asSeconds();
-
 }
 
-void Game::updateSFMLEvents() {
-
+void Game::updateSFMLEvents()
+{
     //Event polling
     while (this->window->pollEvent(this->ev))
     {
@@ -47,31 +45,30 @@ void Game::updateSFMLEvents() {
     }
 }
 
-void Game::update() {
-
+void Game::update()
+{
     this->updateSFMLEvents();
 
-    if (!this->states.empty()){
-
+    if (!this->states.empty())
+    {
         this->states.top()->update(this->deltaTime);
 
-        if (this->states.top()->getQuit()){
-
+        if (this->states.top()->getQuit())
+        {
             this->states.top()->endState();
             delete this->states.top();
             this->states.pop();
         }
     }
-    else{
-
+    else
+    {
         this->endApplication();
         this->window->close();
     }
-
 }
 
-void Game::render() {
-
+void Game::render()
+{
     this->window->clear(sf::Color::White);
 
     //Render items
@@ -79,7 +76,6 @@ void Game::render() {
         this->states.top()->render();
 
     this->window->display();
-
 }
 
 void Game::run() {
@@ -98,9 +94,9 @@ void Game::run() {
 //initializer functions
 
 //Window
-void Game::initWindow() {
+void Game::initWindow()
+{
     //Creating a SFMl window by using the window.ini file
-
     std::ifstream ifs("../Config/window.ini");
     this->videoModes = sf::VideoMode::getFullscreenModes();
     std::string title = "project_a";
@@ -110,8 +106,8 @@ void Game::initWindow() {
     bool vertical_sync_enabled = false;
     unsigned antialiasing_level = 0;
 
-    if (ifs.is_open()){
-
+    if (ifs.is_open())
+    {
         std::getline(ifs, title);
         ifs >> window_bounds.width >> window_bounds.height;
         ifs >> fullscreen;
@@ -152,18 +148,16 @@ void Game::initKeys()
     ifs.close();
 }
 
-void Game::initStates() {
-
+void Game::initStates()
+{
     this->states.push(new MainMenuState(this->window, &this->supportedKeys, &this->states));
 }
 
-void Game::initVariables() {
-
+void Game::initVariables()
+{
     this->window = NULL;
     this->fullscreen = false;
     this-> deltaTime = 0.f;
-
-
 }
 
 

@@ -47,77 +47,84 @@ cmake_ninja_workdir = C$:/Users/amirf/Documents/project_a/cmake-build-debug/
 #############################################
 # Order-only phony target for project_a
 
-build cmake_object_order_depends_target_project_a: phony || CMakeFiles/project_a.dir
+build cmake_object_order_depends_target_project_a: phony || cmake_object_order_depends_target_box2d
 
 build CMakeFiles/project_a.dir/Src/main.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Src/main.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Src
 
 build CMakeFiles/project_a.dir/Entites/Player.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Entites/Player.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Entites\Player.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Entites
 
 build CMakeFiles/project_a.dir/Src/Game.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Src/Game.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Src\Game.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Src
 
 build CMakeFiles/project_a.dir/States/State.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/States/State.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\States\State.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
 
 build CMakeFiles/project_a.dir/States/GameState.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/States/GameState.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\States\GameState.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
 
 build CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Entites/Entity.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Entites\Entity.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Entites
 
 build CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/States/MainMenuState.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\States\MainMenuState.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
 
 build CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Resource$ Files/Button.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Resource_Files\Button.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Resource_Files
 
 build CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Components/MovementComponent.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Components\MovementComponent.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Components
 
 build CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Components/AnimationComponent.cpp || cmake_object_order_depends_target_project_a
   DEP_FILE = CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Components
+
+build CMakeFiles/project_a.dir/Src/Map.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Src/Map.cpp || cmake_object_order_depends_target_project_a
+  DEP_FILE = CMakeFiles\project_a.dir\Src\Map.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  OBJECT_DIR = CMakeFiles\project_a.dir
+  OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Src
 
 
 # =============================================================================
@@ -127,9 +134,9 @@ build CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable project_a.exe
 
-build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a
+build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj CMakeFiles/project_a.dir/Src/Map.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a box2d-main/bin/libbox2d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a || box2d-main/bin/libbox2d.a
   FLAGS = -g
-  LINK_LIBRARIES = "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-graphics-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-window-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-audio-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-network-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-system-d.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-graphics-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-window-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-audio-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-network-d.a"  box2d-main/bin/libbox2d.a  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-system-d.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\project_a.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -160,10 +167,1771 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/edit_cache: phony box2d-main/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/rebuild_cache: phony box2d-main/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/install: phony box2d-main/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/install/local: phony box2d-main/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/install/strip: phony box2d-main/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target box2d
+
+
+#############################################
+# Order-only phony target for box2d
+
+build cmake_object_order_depends_target_box2d: phony || box2d-main/src/CMakeFiles/box2d.dir
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_broad_phase.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_broad_phase.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_chain_shape.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_chain_shape.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_circle_shape.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_circle_shape.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_collide_circle.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_collide_circle.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_collide_edge.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_collide_edge.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_collide_polygon.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_collide_polygon.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_collision.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_collision.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_distance.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_distance.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_dynamic_tree.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_dynamic_tree.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_edge_shape.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_edge_shape.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_polygon_shape.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_polygon_shape.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/collision/b2_time_of_impact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\collision\b2_time_of_impact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\collision
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_block_allocator.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_block_allocator.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_draw.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_draw.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_math.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_math.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_math.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_settings.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_settings.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_stack_allocator.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_stack_allocator.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/common/b2_timer.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\common\b2_timer.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\common
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_body.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_body.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_chain_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_chain_circle_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_chain_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_chain_polygon_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_circle_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_contact_manager.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_contact_manager.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_contact_solver.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_contact_solver.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_distance_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_distance_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_edge_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_edge_circle_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_edge_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_edge_polygon_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_fixture.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_fixture.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_friction_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_friction_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_gear_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_gear_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_island.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_island.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_motor_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_motor_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_mouse_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_mouse_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_polygon_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_circle_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_contact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_prismatic_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_prismatic_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_pulley_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_pulley_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_revolute_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_revolute_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_weld_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_weld_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_wheel_joint.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_wheel_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_world.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_world.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/dynamics/b2_world_callbacks.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\dynamics\b2_world_callbacks.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\dynamics
+
+build box2d-main/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.obj: CXX_COMPILER__box2d_Debug C$:/Users/amirf/Documents/project_a/box2d-main/src/rope/b2_rope.cpp || cmake_object_order_depends_target_box2d
+  DEP_FILE = box2d-main\src\CMakeFiles\box2d.dir\rope\b2_rope.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/src
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-main\src\CMakeFiles\box2d.dir\rope
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target box2d
+
+
+#############################################
+# Link the static library box2d-main\bin\libbox2d.a
+
+build box2d-main/bin/libbox2d.a: CXX_STATIC_LIBRARY_LINKER__box2d_Debug box2d-main/src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_draw.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_math.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_settings.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/common/b2_timer.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.obj box2d-main/src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = box2d-main\src\CMakeFiles\box2d.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\libbox2d.a
+  TARGET_PDB = box2d.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/src/edit_cache: phony box2d-main/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/src/rebuild_cache: phony box2d-main/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/src/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/src/install: phony box2d-main/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/src/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/src/install/local: phony box2d-main/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/src/install/strip: phony box2d-main/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unit_test
+
+
+#############################################
+# Order-only phony target for unit_test
+
+build cmake_object_order_depends_target_unit_test: phony || cmake_object_order_depends_target_box2d
+
+build box2d-main/unit-test/CMakeFiles/unit_test.dir/hello_world.cpp.obj: CXX_COMPILER__unit_test_Debug C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/hello_world.cpp || cmake_object_order_depends_target_unit_test
+  DEP_FILE = box2d-main\unit-test\CMakeFiles\unit_test.dir\hello_world.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+
+build box2d-main/unit-test/CMakeFiles/unit_test.dir/collision_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/collision_test.cpp || cmake_object_order_depends_target_unit_test
+  DEP_FILE = box2d-main\unit-test\CMakeFiles\unit_test.dir\collision_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+
+build box2d-main/unit-test/CMakeFiles/unit_test.dir/joint_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/joint_test.cpp || cmake_object_order_depends_target_unit_test
+  DEP_FILE = box2d-main\unit-test\CMakeFiles\unit_test.dir\joint_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+
+build box2d-main/unit-test/CMakeFiles/unit_test.dir/math_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/math_test.cpp || cmake_object_order_depends_target_unit_test
+  DEP_FILE = box2d-main\unit-test\CMakeFiles\unit_test.dir\math_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+
+build box2d-main/unit-test/CMakeFiles/unit_test.dir/world_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/world_test.cpp || cmake_object_order_depends_target_unit_test
+  DEP_FILE = box2d-main\unit-test\CMakeFiles\unit_test.dir\world_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit_test
+
+
+#############################################
+# Link the executable box2d-main\bin\unit_test.exe
+
+build box2d-main/bin/unit_test.exe: CXX_EXECUTABLE_LINKER__unit_test_Debug box2d-main/unit-test/CMakeFiles/unit_test.dir/hello_world.cpp.obj box2d-main/unit-test/CMakeFiles/unit_test.dir/collision_test.cpp.obj box2d-main/unit-test/CMakeFiles/unit_test.dir/joint_test.cpp.obj box2d-main/unit-test/CMakeFiles/unit_test.dir/math_test.cpp.obj box2d-main/unit-test/CMakeFiles/unit_test.dir/world_test.cpp.obj | box2d-main/bin/libbox2d.a || box2d-main/bin/libbox2d.a
+  FLAGS = -g
+  LINK_LIBRARIES = box2d-main/bin/libbox2d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = box2d-main\unit-test\CMakeFiles\unit_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\unit_test.exe
+  TARGET_IMPLIB = box2d-main\bin\libunit_test.dll.a
+  TARGET_PDB = unit_test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/unit-test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/unit-test/edit_cache: phony box2d-main/unit-test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/unit-test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/unit-test/rebuild_cache: phony box2d-main/unit-test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/unit-test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/unit-test/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/unit-test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/unit-test/install: phony box2d-main/unit-test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/unit-test/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/unit-test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/unit-test/install/local: phony box2d-main/unit-test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/unit-test/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/unit-test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/unit-test/install/strip: phony box2d-main/unit-test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || box2d-main/extern/glad/CMakeFiles/glad.dir
+
+build box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: C_COMPILER__glad_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/src/gl.c || cmake_object_order_depends_target_glad
+  DEP_FILE = box2d-main\extern\glad\CMakeFiles\glad.dir\src\gl.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\extern\glad\CMakeFiles\glad.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glad\CMakeFiles\glad.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library box2d-main\bin\libglad.a
+
+build box2d-main/bin/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = box2d-main\extern\glad\CMakeFiles\glad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\libglad.a
+  TARGET_PDB = glad.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/extern/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/extern/glad/edit_cache: phony box2d-main/extern/glad/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/extern/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glad/rebuild_cache: phony box2d-main/extern/glad/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/extern/glad/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/extern/glad/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/glad/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glad/install: phony box2d-main/extern/glad/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/extern/glad/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/glad/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glad/install/local: phony box2d-main/extern/glad/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/extern/glad/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/glad/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glad/install/strip: phony box2d-main/extern/glad/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || box2d-main/extern/glfw/CMakeFiles/glfw.dir
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/context.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\context.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/init.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\init.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/input.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\input.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\monitor.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\vulkan.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/window.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\window.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_init.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_joystick.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_monitor.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_time.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_thread.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\win32_window.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\wgl_context.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\egl_context.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+build box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: C_COMPILER__glfw_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEP_FILE = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src\osmesa_context.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library box2d-main\bin\libglfw.a
+
+build box2d-main/bin/libglfw.a: C_STATIC_LIBRARY_LINKER__glfw_Debug box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = box2d-main\extern\glfw\CMakeFiles\glfw.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\libglfw.a
+  TARGET_PDB = glfw.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/extern/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/extern/glfw/edit_cache: phony box2d-main/extern/glfw/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/extern/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glfw/rebuild_cache: phony box2d-main/extern/glfw/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/extern/glfw/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/extern/glfw/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glfw/install: phony box2d-main/extern/glfw/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/extern/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glfw/install/local: phony box2d-main/extern/glfw/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/extern/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/glfw/install/strip: phony box2d-main/extern/glfw/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Order-only phony target for imgui
+
+build cmake_object_order_depends_target_imgui: phony || box2d-main/extern/imgui/CMakeFiles/imgui.dir
+
+build box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.obj: CXX_COMPILER__imgui_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = box2d-main\extern\imgui\CMakeFiles\imgui.dir\imgui.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/..
+  OBJECT_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+
+build box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.obj: CXX_COMPILER__imgui_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = box2d-main\extern\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/..
+  OBJECT_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+
+build box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.obj: CXX_COMPILER__imgui_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = box2d-main\extern\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/..
+  OBJECT_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+
+build box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.obj: CXX_COMPILER__imgui_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = box2d-main\extern\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/..
+  OBJECT_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Link the static library box2d-main\bin\libimgui.a
+
+build box2d-main/bin/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.obj box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.obj box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.obj box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = box2d-main\extern\imgui\CMakeFiles\imgui.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\libimgui.a
+  TARGET_PDB = imgui.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/extern/imgui/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/extern/imgui/edit_cache: phony box2d-main/extern/imgui/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/extern/imgui/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/imgui/rebuild_cache: phony box2d-main/extern/imgui/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/extern/imgui/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/extern/imgui/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/imgui/install: phony box2d-main/extern/imgui/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/extern/imgui/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/imgui/install/local: phony box2d-main/extern/imgui/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/extern/imgui/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/imgui/install/strip: phony box2d-main/extern/imgui/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target sajson
+
+
+#############################################
+# Order-only phony target for sajson
+
+build cmake_object_order_depends_target_sajson: phony || box2d-main/extern/sajson/CMakeFiles/sajson.dir
+
+build box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.obj: CXX_COMPILER__sajson_Debug C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/sajson.cpp || cmake_object_order_depends_target_sajson
+  DEP_FILE = box2d-main\extern\sajson\CMakeFiles\sajson.dir\sajson.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/..
+  OBJECT_DIR = box2d-main\extern\sajson\CMakeFiles\sajson.dir
+  OBJECT_FILE_DIR = box2d-main\extern\sajson\CMakeFiles\sajson.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target sajson
+
+
+#############################################
+# Link the static library box2d-main\bin\libsajson.a
+
+build box2d-main/bin/libsajson.a: CXX_STATIC_LIBRARY_LINKER__sajson_Debug box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = box2d-main\extern\sajson\CMakeFiles\sajson.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\libsajson.a
+  TARGET_PDB = sajson.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/extern/sajson/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/extern/sajson/edit_cache: phony box2d-main/extern/sajson/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/extern/sajson/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/sajson/rebuild_cache: phony box2d-main/extern/sajson/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/extern/sajson/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/extern/sajson/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/sajson/install: phony box2d-main/extern/sajson/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/extern/sajson/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/sajson/install/local: phony box2d-main/extern/sajson/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/extern/sajson/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/extern/sajson/install/strip: phony box2d-main/extern/sajson/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target testbed
+
+
+#############################################
+# Order-only phony target for testbed
+
+build cmake_object_order_depends_target_testbed: phony || cmake_object_order_depends_target_box2d cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_sajson
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/draw.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/draw.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\draw.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/imgui_impl_glfw.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/imgui_impl_glfw.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\imgui_impl_glfw.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\imgui_impl_opengl3.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/main.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/main.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\main.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/settings.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/settings.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\settings.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/test.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/test.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/benchmark_boxes.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/benchmark_boxes.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\benchmark_boxes.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/add_pair.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/add_pair.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\add_pair.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/apply_force.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/apply_force.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\apply_force.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/body_types.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/body_types.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\body_types.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/box_stack.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/box_stack.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\box_stack.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/breakable.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/breakable.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\breakable.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/bridge.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/bridge.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\bridge.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/bullet_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/bullet_test.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\bullet_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/cantilever.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/cantilever.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\cantilever.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/car.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/car.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\car.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/chain.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/chain.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\chain.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/chain_problem.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/chain_problem.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\chain_problem.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/character_collision.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/character_collision.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\character_collision.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/circle_stack.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/circle_stack.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\circle_stack.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/collision_filtering.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/collision_filtering.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\collision_filtering.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/collision_processing.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/collision_processing.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\collision_processing.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/compound_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/compound_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\compound_shapes.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/confined.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/confined.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\confined.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/continuous_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/continuous_test.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\continuous_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/convex_hull.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/convex_hull.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\convex_hull.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/conveyor_belt.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/conveyor_belt.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\conveyor_belt.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/distance_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/distance_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\distance_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/distance_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/distance_test.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\distance_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/dominos.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/dominos.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\dominos.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/dump_loader.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/dump_loader.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\dump_loader.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/dynamic_tree.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/dynamic_tree.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\dynamic_tree.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/edge_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/edge_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\edge_shapes.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/edge_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/edge_test.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\edge_test.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/friction.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/friction.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\friction.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/gear_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/gear_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\gear_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/heavy1.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/heavy1.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\heavy1.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/heavy2.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/heavy2.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\heavy2.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/mobile_balanced.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/mobile_balanced.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\mobile_balanced.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/mobile_unbalanced.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/mobile_unbalanced.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\mobile_unbalanced.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/motor_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/motor_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\motor_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/pinball.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/pinball.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\pinball.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/platformer.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/platformer.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\platformer.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/polygon_collision.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/polygon_collision.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\polygon_collision.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/polygon_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/polygon_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\polygon_shapes.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/prismatic_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/prismatic_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\prismatic_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/pulley_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/pulley_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\pulley_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/pyramid.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/pyramid.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\pyramid.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/ray_cast.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/ray_cast.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\ray_cast.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/restitution.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/restitution.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\restitution.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/revolute_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/revolute_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\revolute_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/rope.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/rope.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\rope.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/sensor.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/sensor.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\sensor.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/shape_cast.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/shape_cast.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\shape_cast.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/shape_editing.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/shape_editing.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\shape_editing.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/skier.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/skier.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\skier.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/slider_crank_1.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/slider_crank_1.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\slider_crank_1.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/slider_crank_2.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/slider_crank_2.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\slider_crank_2.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/theo_jansen.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/theo_jansen.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\theo_jansen.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/tiles.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/tiles.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\tiles.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/time_of_impact.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/time_of_impact.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\time_of_impact.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/tumbler.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/tumbler.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\tumbler.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/web.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/web.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\web.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/wheel_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/wheel_joint.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\wheel_joint.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+build box2d-main/testbed/CMakeFiles/testbed.dir/tests/wrecking_ball.cpp.obj: CXX_COMPILER__testbed_Debug C$:/Users/amirf/Documents/project_a/box2d-main/testbed/tests/wrecking_ball.cpp || cmake_object_order_depends_target_testbed
+  DEP_FILE = box2d-main\testbed\CMakeFiles\testbed.dir\tests\wrecking_ball.cpp.obj.d
+  FLAGS = -g -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -std=c++11
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/testbed -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/include -IC:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/.. -IC:/Users/amirf/Documents/project_a/box2d-main/extern/glad/include
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-main\testbed\CMakeFiles\testbed.dir\tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target testbed
+
+
+#############################################
+# Link the executable box2d-main\bin\testbed.exe
+
+build box2d-main/bin/testbed.exe: CXX_EXECUTABLE_LINKER__testbed_Debug box2d-main/testbed/CMakeFiles/testbed.dir/draw.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/imgui_impl_glfw.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/imgui_impl_opengl3.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/main.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/settings.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/test.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/benchmark_boxes.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/add_pair.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/apply_force.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/body_types.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/box_stack.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/breakable.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/bridge.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/bullet_test.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/cantilever.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/car.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/chain.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/chain_problem.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/character_collision.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/circle_stack.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/collision_filtering.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/collision_processing.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/compound_shapes.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/confined.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/continuous_test.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/convex_hull.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/conveyor_belt.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/distance_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/distance_test.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/dominos.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/dump_loader.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/dynamic_tree.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/edge_shapes.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/edge_test.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/friction.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/gear_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/heavy1.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/heavy2.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/mobile_balanced.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/mobile_unbalanced.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/motor_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/pinball.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/platformer.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/polygon_collision.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/polygon_shapes.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/prismatic_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/pulley_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/pyramid.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/ray_cast.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/restitution.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/revolute_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/rope.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/sensor.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/shape_cast.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/shape_editing.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/skier.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/slider_crank_1.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/slider_crank_2.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/theo_jansen.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/tiles.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/time_of_impact.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/tumbler.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/web.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/wheel_joint.cpp.obj box2d-main/testbed/CMakeFiles/testbed.dir/tests/wrecking_ball.cpp.obj | box2d-main/bin/libbox2d.a box2d-main/bin/libglfw.a box2d-main/bin/libimgui.a box2d-main/bin/libsajson.a box2d-main/bin/libglad.a || box2d-main/bin/libbox2d.a box2d-main/bin/libglad.a box2d-main/bin/libglfw.a box2d-main/bin/libimgui.a box2d-main/bin/libsajson.a
+  FLAGS = -g
+  LINK_LIBRARIES = box2d-main/bin/libbox2d.a  box2d-main/bin/libglfw.a  box2d-main/bin/libimgui.a  box2d-main/bin/libsajson.a  box2d-main/bin/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E copy_directory C:/Users/amirf/Documents/project_a/box2d-main/testbed/data/ C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/testbed/data/"
+  PRE_LINK = cd .
+  TARGET_FILE = box2d-main\bin\testbed.exe
+  TARGET_IMPLIB = box2d-main\bin\libtestbed.dll.a
+  TARGET_PDB = testbed.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-main/testbed/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-main/testbed/edit_cache: phony box2d-main/testbed/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-main/testbed/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-main/testbed/rebuild_cache: phony box2d-main/testbed/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-main/testbed/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-main/testbed/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/testbed/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-main/testbed/install: phony box2d-main/testbed/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-main/testbed/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/testbed/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-main/testbed/install/local: phony box2d-main/testbed/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build box2d-main/testbed/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/testbed/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build box2d-main/testbed/install/strip: phony box2d-main/testbed/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
 
+build box2d: phony box2d-main/bin/libbox2d.a
+
+build glad: phony box2d-main/bin/libglad.a
+
+build glfw: phony box2d-main/bin/libglfw.a
+
+build imgui: phony box2d-main/bin/libimgui.a
+
+build libbox2d.a: phony box2d-main/bin/libbox2d.a
+
+build libglad.a: phony box2d-main/bin/libglad.a
+
+build libglfw.a: phony box2d-main/bin/libglfw.a
+
+build libimgui.a: phony box2d-main/bin/libimgui.a
+
+build libsajson.a: phony box2d-main/bin/libsajson.a
+
 build project_a: phony project_a.exe
+
+build sajson: phony box2d-main/bin/libsajson.a
+
+build testbed: phony box2d-main/bin/testbed.exe
+
+build testbed.exe: phony box2d-main/bin/testbed.exe
+
+build unit_test: phony box2d-main/bin/unit_test.exe
+
+build unit_test.exe: phony box2d-main/bin/unit_test.exe
 
 # =============================================================================
 # Folder targets.
@@ -173,7 +1941,63 @@ build project_a: phony project_a.exe
 #############################################
 # Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug
 
-build all: phony project_a.exe
+build all: phony project_a.exe box2d-main/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main
+
+build box2d-main/all: phony box2d-main/src/all box2d-main/unit-test/all box2d-main/extern/glad/all box2d-main/extern/glfw/all box2d-main/extern/imgui/all box2d-main/extern/sajson/all box2d-main/testbed/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/glad
+
+build box2d-main/extern/glad/all: phony box2d-main/bin/libglad.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/glfw
+
+build box2d-main/extern/glfw/all: phony box2d-main/bin/libglfw.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/imgui
+
+build box2d-main/extern/imgui/all: phony box2d-main/bin/libimgui.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/sajson
+
+build box2d-main/extern/sajson/all: phony box2d-main/bin/libsajson.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/src
+
+build box2d-main/src/all: phony box2d-main/bin/libbox2d.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/testbed
+
+build box2d-main/testbed/all: phony box2d-main/bin/testbed.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/unit-test
+
+build box2d-main/unit-test/all: phony box2d-main/bin/unit_test.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -187,14 +2011,14 @@ build all: phony project_a.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################

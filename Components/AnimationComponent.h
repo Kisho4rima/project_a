@@ -10,20 +10,30 @@
 #include "SFML/Network.hpp"
 #include "SFML/Audio.hpp"
 
+/*Die AnimationComponent Klasse wird zum Animieren des Sprites verwendet*/
+
 class AnimationComponent {
 public:
     AnimationComponent(sf::Sprite &sprite, sf::Texture &texture_sheet);
     ~AnimationComponent();
 
     //Functions
+
+    /*Hinzufügen einer Animation zur AnimationComponent
+    Erfordert einen Key, Animationsdauer und Parameter um, um den Rahmenbereich und die Größe der Frames in der
+    Textur festzulegen*/
     void addAnimation(const std::string key,
         float animation_timer,
         int start_frame_x, int start_frame_y, int frames_x, int frames_y, int width, int height);
 
+    /*Spielt die Animation basierend auf dem angegebenen Key ab. Aktualisiert die Animation des Sprites in regelmäßigen
+    Abständen basierend auf der deltaTime*/
     void play(const std::string  key, const float &deltaTime);
 
 
 private:
+    //Interne Klasse repräsentiert eine Animation.
+    //Enthält Informationen wie Sprite- und Texturen verweise, Animationsdauer, Rahmenbereich und aktueller Rahmen.
     class Animation{
     public:
         //Variables
@@ -54,6 +64,9 @@ private:
                 }
 
         //Functions
+
+        /*Die Funktionen play und reset werden verwendet um die Animation abzuspielen und zurückzusetzen*/
+
         void play(const float &deltaTime){
             //update timer
             this->timer += 100.f * deltaTime;

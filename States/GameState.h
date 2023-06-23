@@ -2,6 +2,7 @@
 #define PROJECT_A_GAMESTATE_H
 
 #include "State.h"
+#include "../Src/Map.h"
 
 class GameState :
         public State
@@ -15,15 +16,17 @@ public:
     void update(const float& deltaTime);
     void render(sf::RenderTarget* target = nullptr);
 
+
 private:
     Player *player;
+    Map *map;
 
     //Functions
     void initKeybinds();
     void initTextures();
     void initPlayers();
 
-
+    void render(sf::RenderWindow *target);
 };
 
 
