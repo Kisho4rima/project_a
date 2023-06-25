@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 
 
+
 //Constructor
 Player::Player(float x, float y, sf::Texture &texture_sheet, b2World *world)
 {
@@ -16,8 +17,8 @@ Player::Player(float x, float y, sf::Texture &texture_sheet, b2World *world)
     this->animationComponent->addAnimation("RUN_RIGHT", 10.f, 0, 2, 7, 2, 160, 111);
     this->animationComponent->addAnimation("RUN_LEFT", 10.f, 0, 3, 7, 3, 160, 111);
     this->world = world;
-    this->initPlayerFixture();
-    this->initPlayerBody();
+    this->initPlayerCollision();
+
 }
 
 //Destructor
@@ -65,29 +66,35 @@ void Player::update(const float &deltaTime)
     }
 }
 
-void Player::initPlayerFixture()
-{
-    //Erstellen einen Polygon der über den Sprite gelegt wird
-    b2PolygonShape sShape;
-    sShape.SetAsBox(sprite.getGlobalBounds().width / 3.5, sprite.getGlobalBounds().height / 3.5f);
-    //Erstelle Fixture für Kollision
-    b2FixtureDef fixtureDef;
-    fixtureDef.shape =  &sShape;
-    fixtureDef.density = 1.0f;
-    fixtureDef.friction = 0.2f;
-
-    //Füge die Fixture dem Körper des Spielers hinzu
-    //bodyDef->CreateFixture(&fixtureDef);
-
-}
-
-void Player::initPlayerBody()
+void Player::initPlayerCollision()
 {
     //Erstellung des Bodys
     b2BodyDef playerBodyDef;
     playerBodyDef.type = b2_dynamicBody;
-    playerBodyDef.position.Set(3.f, 3.f); //Keine Ahnung welche Koordinaten eigentlich rein müssen
-    b2Body* dynamicBody = world->CreateBody(&playerBodyDef);
+    playerBodyDef.position.Set(sprite.getPosition().x, sprite.getPosition().y);
+    b2Body *body = world->CreateBody(&playerBodyDef);
+
+    //Erstellen einen Polygon der über den Sprite gelegt wird
+    float sShapeWidth = sprite.getLocalBounds().width / 3.2f;
+    float sShapeHeight = sprite.getLocalBounds().height / 4.3f;
+
+    b2PolygonShape sShape;
+    sShape.SetAsBox(sShapeWidth, sShapeHeight);
+
+    //Hilfe
+    std::cout << "Width: " << sShapeWidth << std::endl;
+    std::cout << "Height: " << sShapeHeight << std::endl;
+
+
+    //Erstelle Fixture für Kollision
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape =  &sShape;
+
+    body->CreateFixture(&fixtureDef);
+
+    //Füge die Fixture dem Körper des Spielers hinzu
+    sprite.setPosition(body->GetPosition().x, body->GetPosition().y);
+
 }
 
 

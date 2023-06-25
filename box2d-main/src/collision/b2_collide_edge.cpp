@@ -347,7 +347,7 @@ void b2CollideEdgeAndPolygon(b2Manifold* manifold,
 		const float sinTol = 0.1f;
 		bool side1 = b2Dot(primaryAxis.normal, edge1) <= 0.0f;
 
-		// Check Gauss Map
+		// Check Gauss World
 		if (side1)
 		{
 			if (convex1)

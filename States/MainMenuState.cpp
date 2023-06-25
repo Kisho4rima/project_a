@@ -116,6 +116,12 @@ void MainMenuState::updateButtons()
         this->states->push(new GameState(this->window, this->supportedKeys, this->states));
     }
 
+    //Editor
+    if (this->buttons["EDITOR_STATE"]->isPressed())
+    {
+        this->states->push(new EditorState(this->window, this->supportedKeys, this->states));
+    }
+
     //Exit Game
     if (this->buttons["EXIT_STATE"]->isPressed())
     {
@@ -142,7 +148,7 @@ void MainMenuState::initBackground()
     this->background.setSize(sf::Vector2f(static_cast<float>(this->window->getSize().x),
         static_cast<float>(this->window->getSize().y)));
 
-    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/background_first.png"))
+    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/SecondBackground.png"))
     {
         throw "Error_failed_to_load_main_menu_state_background";
     }

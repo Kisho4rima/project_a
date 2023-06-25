@@ -119,12 +119,19 @@ build CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Components
 
-build CMakeFiles/project_a.dir/Src/Map.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Src/Map.cpp || cmake_object_order_depends_target_project_a
-  DEP_FILE = CMakeFiles\project_a.dir\Src\Map.cpp.obj.d
+build CMakeFiles/project_a.dir/Entites/World.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/Entites/World.cpp || cmake_object_order_depends_target_project_a
+  DEP_FILE = CMakeFiles\project_a.dir\Entites\World.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
   OBJECT_DIR = CMakeFiles\project_a.dir
-  OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Src
+  OBJECT_FILE_DIR = CMakeFiles\project_a.dir\Entites
+
+build CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/States/EditorState.cpp || cmake_object_order_depends_target_project_a
+  DEP_FILE = CMakeFiles\project_a.dir\States\EditorState.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  OBJECT_DIR = CMakeFiles\project_a.dir
+  OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
 
 
 # =============================================================================
@@ -134,7 +141,7 @@ build CMakeFiles/project_a.dir/Src/Map.cpp.obj: CXX_COMPILER__project_a_Debug C$
 #############################################
 # Link the executable project_a.exe
 
-build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj CMakeFiles/project_a.dir/Src/Map.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a box2d-main/bin/libbox2d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a || box2d-main/bin/libbox2d.a
+build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj CMakeFiles/project_a.dir/Entites/World.cpp.obj CMakeFiles/project_a.dir/States/EditorState.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a box2d-main/bin/libbox2d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a || box2d-main/bin/libbox2d.a
   FLAGS = -g
   LINK_LIBRARIES = "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-graphics-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-window-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-audio-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-network-d.a"  box2d-main/bin/libbox2d.a  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-system-d.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\project_a.dir
@@ -149,7 +156,7 @@ build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -160,7 +167,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -178,7 +185,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -190,7 +197,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -202,7 +209,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -219,7 +226,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build box2d-main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -230,7 +237,7 @@ build box2d-main/edit_cache: phony box2d-main/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build box2d-main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -248,7 +255,7 @@ build box2d-main/list_install_components: phony
 # Utility command for install
 
 build box2d-main/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -260,7 +267,7 @@ build box2d-main/install: phony box2d-main/CMakeFiles/install.util
 # Utility command for install/local
 
 build box2d-main/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -272,7 +279,7 @@ build box2d-main/install/local: phony box2d-main/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build box2d-main/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -629,7 +636,7 @@ build box2d-main/bin/libbox2d.a: CXX_STATIC_LIBRARY_LINKER__box2d_Debug box2d-ma
 # Utility command for edit_cache
 
 build box2d-main/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -640,7 +647,7 @@ build box2d-main/src/edit_cache: phony box2d-main/src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build box2d-main/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -658,7 +665,7 @@ build box2d-main/src/list_install_components: phony
 # Utility command for install
 
 build box2d-main/src/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -670,7 +677,7 @@ build box2d-main/src/install: phony box2d-main/src/CMakeFiles/install.util
 # Utility command for install/local
 
 build box2d-main/src/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -682,7 +689,7 @@ build box2d-main/src/install/local: phony box2d-main/src/CMakeFiles/install/loca
 # Utility command for install/strip
 
 build box2d-main/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\src && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -761,7 +768,7 @@ build box2d-main/bin/unit_test.exe: CXX_EXECUTABLE_LINKER__unit_test_Debug box2d
 # Utility command for edit_cache
 
 build box2d-main/unit-test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -772,7 +779,7 @@ build box2d-main/unit-test/edit_cache: phony box2d-main/unit-test/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build box2d-main/unit-test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -790,7 +797,7 @@ build box2d-main/unit-test/list_install_components: phony
 # Utility command for install
 
 build box2d-main/unit-test/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/unit-test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -802,7 +809,7 @@ build box2d-main/unit-test/install: phony box2d-main/unit-test/CMakeFiles/instal
 # Utility command for install/local
 
 build box2d-main/unit-test/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/unit-test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -814,7 +821,7 @@ build box2d-main/unit-test/install/local: phony box2d-main/unit-test/CMakeFiles/
 # Utility command for install/strip
 
 build box2d-main/unit-test/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/unit-test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\unit-test && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -863,7 +870,7 @@ build box2d-main/bin/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug box2d-main/e
 # Utility command for edit_cache
 
 build box2d-main/extern/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -874,7 +881,7 @@ build box2d-main/extern/glad/edit_cache: phony box2d-main/extern/glad/CMakeFiles
 # Utility command for rebuild_cache
 
 build box2d-main/extern/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -892,7 +899,7 @@ build box2d-main/extern/glad/list_install_components: phony
 # Utility command for install
 
 build box2d-main/extern/glad/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/glad/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -904,7 +911,7 @@ build box2d-main/extern/glad/install: phony box2d-main/extern/glad/CMakeFiles/in
 # Utility command for install/local
 
 build box2d-main/extern/glad/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/glad/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -916,7 +923,7 @@ build box2d-main/extern/glad/install/local: phony box2d-main/extern/glad/CMakeFi
 # Utility command for install/strip
 
 build box2d-main/extern/glad/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/glad/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1063,7 +1070,7 @@ build box2d-main/bin/libglfw.a: C_STATIC_LIBRARY_LINKER__glfw_Debug box2d-main/e
 # Utility command for edit_cache
 
 build box2d-main/extern/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1074,7 +1081,7 @@ build box2d-main/extern/glfw/edit_cache: phony box2d-main/extern/glfw/CMakeFiles
 # Utility command for rebuild_cache
 
 build box2d-main/extern/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1092,7 +1099,7 @@ build box2d-main/extern/glfw/list_install_components: phony
 # Utility command for install
 
 build box2d-main/extern/glfw/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1104,7 +1111,7 @@ build box2d-main/extern/glfw/install: phony box2d-main/extern/glfw/CMakeFiles/in
 # Utility command for install/local
 
 build box2d-main/extern/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1116,7 +1123,7 @@ build box2d-main/extern/glfw/install/local: phony box2d-main/extern/glfw/CMakeFi
 # Utility command for install/strip
 
 build box2d-main/extern/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/glfw/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1186,7 +1193,7 @@ build box2d-main/bin/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug box2d-ma
 # Utility command for edit_cache
 
 build box2d-main/extern/imgui/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1197,7 +1204,7 @@ build box2d-main/extern/imgui/edit_cache: phony box2d-main/extern/imgui/CMakeFil
 # Utility command for rebuild_cache
 
 build box2d-main/extern/imgui/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1215,7 +1222,7 @@ build box2d-main/extern/imgui/list_install_components: phony
 # Utility command for install
 
 build box2d-main/extern/imgui/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1227,7 +1234,7 @@ build box2d-main/extern/imgui/install: phony box2d-main/extern/imgui/CMakeFiles/
 # Utility command for install/local
 
 build box2d-main/extern/imgui/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1239,7 +1246,7 @@ build box2d-main/extern/imgui/install/local: phony box2d-main/extern/imgui/CMake
 # Utility command for install/strip
 
 build box2d-main/extern/imgui/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/imgui/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\imgui && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1288,7 +1295,7 @@ build box2d-main/bin/libsajson.a: CXX_STATIC_LIBRARY_LINKER__sajson_Debug box2d-
 # Utility command for edit_cache
 
 build box2d-main/extern/sajson/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1299,7 +1306,7 @@ build box2d-main/extern/sajson/edit_cache: phony box2d-main/extern/sajson/CMakeF
 # Utility command for rebuild_cache
 
 build box2d-main/extern/sajson/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1317,7 +1324,7 @@ build box2d-main/extern/sajson/list_install_components: phony
 # Utility command for install
 
 build box2d-main/extern/sajson/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1329,7 +1336,7 @@ build box2d-main/extern/sajson/install: phony box2d-main/extern/sajson/CMakeFile
 # Utility command for install/local
 
 build box2d-main/extern/sajson/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1341,7 +1348,7 @@ build box2d-main/extern/sajson/install/local: phony box2d-main/extern/sajson/CMa
 # Utility command for install/strip
 
 build box2d-main/extern/sajson/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/extern/sajson/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\sajson && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1829,7 +1836,7 @@ build box2d-main/bin/testbed.exe: CXX_EXECUTABLE_LINKER__testbed_Debug box2d-mai
   FLAGS = -g
   LINK_LIBRARIES = box2d-main/bin/libbox2d.a  box2d-main/bin/libglfw.a  box2d-main/bin/libimgui.a  box2d-main/bin/libsajson.a  box2d-main/bin/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = box2d-main\testbed\CMakeFiles\testbed.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E copy_directory C:/Users/amirf/Documents/project_a/box2d-main/testbed/data/ C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/testbed/data/"
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E copy_directory C:/Users/amirf/Documents/project_a/box2d-main/testbed/data/ C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/testbed/data/"
   PRE_LINK = cd .
   TARGET_FILE = box2d-main\bin\testbed.exe
   TARGET_IMPLIB = box2d-main\bin\libtestbed.dll.a
@@ -1840,7 +1847,7 @@ build box2d-main/bin/testbed.exe: CXX_EXECUTABLE_LINKER__testbed_Debug box2d-mai
 # Utility command for edit_cache
 
 build box2d-main/testbed/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1851,7 +1858,7 @@ build box2d-main/testbed/edit_cache: phony box2d-main/testbed/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build box2d-main/testbed/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\amirf\Documents\project_a -BC:\Users\amirf\Documents\project_a\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1869,7 +1876,7 @@ build box2d-main/testbed/list_install_components: phony
 # Utility command for install
 
 build box2d-main/testbed/CMakeFiles/install.util: CUSTOM_COMMAND box2d-main/testbed/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1881,7 +1888,7 @@ build box2d-main/testbed/install: phony box2d-main/testbed/CMakeFiles/install.ut
 # Utility command for install/local
 
 build box2d-main/testbed/CMakeFiles/install/local.util: CUSTOM_COMMAND box2d-main/testbed/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1893,7 +1900,7 @@ build box2d-main/testbed/install/local: phony box2d-main/testbed/CMakeFiles/inst
 # Utility command for install/strip
 
 build box2d-main/testbed/CMakeFiles/install/strip.util: CUSTOM_COMMAND box2d-main/testbed/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\testbed && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -2011,14 +2018,14 @@ build box2d-main/unit-test/all: phony box2d-main/bin/unit_test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/FindThreads.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/cmake/win/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/amirf/Documents/project_a/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glad/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/glfw/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/src/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/testbed/CMakeLists.txt C$:/Users/amirf/Documents/project_a/box2d-main/unit-test/CMakeLists.txt C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfig.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-debug.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/libraries/SFML-2.5.1$ GCC/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################

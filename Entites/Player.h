@@ -3,7 +3,7 @@
 
 #include "Player.h"
 #include "Entity.h"
-#include "../Src/Map.h"
+#include "World.h"
 #include <SFML/Graphics.hpp>
 #include "box2d/box2d.h"
 
@@ -23,6 +23,7 @@ private:
     b2World *world;// Zeiger auf die b2World instanz
     sf::Vector2f playerSize;
 
+
     /*Dient dazu, um die ausrichtung des Sprites zu erkennen und je nachdem die idle animation in die Richtung abzuspielen,
     der die der Sprite schaut*/
     int lastMove;
@@ -31,8 +32,12 @@ private:
     //Ini functions
     void initVariables();
     void initComponents();
-    void initPlayerFixture();
     void initPlayerBody();
+    void initPlayerFixture();
+    void initPlayerCollision();
+
+protected:
+
 };
 
 

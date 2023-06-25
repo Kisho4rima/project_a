@@ -2,7 +2,7 @@
 #define PROJECT_A_GAMESTATE_H
 
 #include "State.h"
-#include "../Src/Map.h"
+#include "../Entites/World.h"
 
 class GameState :
         public State
@@ -19,7 +19,7 @@ public:
 
 private:
     Player *player;
-    Map *map;
+    World *map;
 
     //Functions
     void initKeybinds();

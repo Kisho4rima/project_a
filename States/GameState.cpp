@@ -1,11 +1,11 @@
 #include "GameState.h"
-#include "../Src/Map.h"
+#include "../Entites/World.h"
 
 //Constructor
 GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states)
     : State(window, supportedKeys, states), map(nullptr)
 {
-    this->map = new Map();
+    this->map = new World();
     this->initKeybinds();
     this->initTextures();
     this->initPlayers();
@@ -35,8 +35,9 @@ void GameState::render(sf::RenderTarget* target)
 
     if (map != nullptr)
     {
-        this->map->render(dynamic_cast<sf::RenderWindow *>(target)); // Zeichne die Map
+        this->map->render(dynamic_cast<sf::RenderWindow *>(target)); // Zeichne die World
     }
+
 
 }
 
@@ -89,6 +90,8 @@ void GameState::initPlayers()
 {
     this->player = new Player(0,0, this->textures["PLAYER_SHEET"], &this->map->world_);
 }
+
+
 
 
 
