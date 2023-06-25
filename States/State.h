@@ -10,6 +10,8 @@ public:
     virtual ~State();
 
     const bool& getQuit() const;
+    void pauseState();
+    void unpauseState();
 
     void endState();
     virtual void updateMousePos();
@@ -23,6 +25,7 @@ protected:
     std::map<std::string, int>* supportedKeys;
     std::map<std::string, int> keybinds;
     bool quit;
+    bool paused;
 
     //track the mouse position
     sf::Vector2i mousePosScreen;

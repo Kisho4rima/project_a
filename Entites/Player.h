@@ -28,7 +28,6 @@ private:
     der die der Sprite schaut*/
     int lastMove;
 
-
     //Ini functions
     void initVariables();
     void initComponents();

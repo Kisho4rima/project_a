@@ -133,6 +133,13 @@ build CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CXX_COMPILER__project
   OBJECT_DIR = CMakeFiles\project_a.dir
   OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
 
+build CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: CXX_COMPILER__project_a_Debug C$:/Users/amirf/Documents/project_a/States/PauseMenu.cpp || cmake_object_order_depends_target_project_a
+  DEP_FILE = CMakeFiles\project_a.dir\States\PauseMenu.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/amirf/Documents/project_a/box2d-main/src/../include -isystem "C:/libraries/SFML-2.5.1 GCC/include"
+  OBJECT_DIR = CMakeFiles\project_a.dir
+  OBJECT_FILE_DIR = CMakeFiles\project_a.dir\States
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target project_a
@@ -141,7 +148,7 @@ build CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CXX_COMPILER__project
 #############################################
 # Link the executable project_a.exe
 
-build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj CMakeFiles/project_a.dir/Entites/World.cpp.obj CMakeFiles/project_a.dir/States/EditorState.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a box2d-main/bin/libbox2d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a || box2d-main/bin/libbox2d.a
+build project_a.exe: CXX_EXECUTABLE_LINKER__project_a_Debug CMakeFiles/project_a.dir/Src/main.cpp.obj CMakeFiles/project_a.dir/Entites/Player.cpp.obj CMakeFiles/project_a.dir/Src/Game.cpp.obj CMakeFiles/project_a.dir/States/State.cpp.obj CMakeFiles/project_a.dir/States/GameState.cpp.obj CMakeFiles/project_a.dir/Entites/Entity.cpp.obj CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj CMakeFiles/project_a.dir/Entites/World.cpp.obj CMakeFiles/project_a.dir/States/EditorState.cpp.obj CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj | C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-graphics-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-window-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-audio-d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-network-d.a box2d-main/bin/libbox2d.a C$:/libraries/SFML-2.5.1$ GCC/lib/libsfml-system-d.a || box2d-main/bin/libbox2d.a
   FLAGS = -g
   LINK_LIBRARIES = "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-graphics-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-window-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-audio-d.a"  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-network-d.a"  box2d-main/bin/libbox2d.a  "C:/libraries/SFML-2.5.1 GCC/lib/libsfml-system-d.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\project_a.dir

@@ -94,8 +94,9 @@ void Player::initPlayerCollision()
 
     //Füge die Fixture dem Körper des Spielers hinzu
     sprite.setPosition(body->GetPosition().x, body->GetPosition().y);
-
 }
+
+
 
 
 

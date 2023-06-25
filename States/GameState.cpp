@@ -7,13 +7,16 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
 {
     this->map = new World();
     this->initKeybinds();
+    this->initFonts();
     this->initTextures();
+    this->initPauseMenu();
     this->initPlayers();
 }
 
 //Destructor
 GameState::~GameState()
 {
+    delete this->pmenu;
     delete this->player;
 }
 
@@ -21,7 +24,17 @@ void GameState::update(const float& deltaTime)
 {
     this->updateMousePos();
     this->updateInput(deltaTime);
-    this->player->update(deltaTime);
+
+    if (!this->paused)
+    {
+        this->updatePlayerInput(deltaTime);
+        this->player->update(deltaTime);
+    }
+    else
+    {
+        this->pmenu->update();
+    }
+
 }
 
 void GameState::render(sf::RenderTarget* target)
@@ -38,10 +51,13 @@ void GameState::render(sf::RenderTarget* target)
         this->map->render(dynamic_cast<sf::RenderWindow *>(target)); // Zeichne die World
     }
 
-
+    if (this->paused)
+    {
+        this->pmenu->render(target);
+    }
 }
 
-void GameState::updateInput(const float &deltaTime)
+void GameState::updatePlayerInput(const float &deltaTime)
 {
     //Update player input
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("Move_Left"))))
@@ -56,8 +72,6 @@ void GameState::updateInput(const float &deltaTime)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("Move_Down"))))
         this->player->move(0.f, 1.f, deltaTime);
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("CLOSE"))))
-        this->endState();
 }
 
 //initializer functions
@@ -79,6 +93,14 @@ void GameState::initKeybinds()
     ifs.close();
 }
 
+void GameState::initFonts()
+{
+    if (!this->font.loadFromFile("../Fonts/Commodore Pixelized v1.2.ttf"))
+    {
+        throw ("Could not load font");
+    }
+}
+
 void GameState::initTextures()
 {
     if (!this->textures["PLAYER_SHEET"].loadFromFile("../Assets/Sprites/Player/IdleAndRun.png")) {
@@ -89,6 +111,32 @@ void GameState::initTextures()
 void GameState::initPlayers()
 {
     this->player = new Player(0,0, this->textures["PLAYER_SHEET"], &this->map->world_);
+}
+
+void GameState::initCollisionScreen()
+{
+
+
+}
+
+void GameState::updateInput(const float &deltaTime)
+{
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("CLOSE"))))
+    {
+        if (!this->paused)
+        {
+            this->pauseState();
+        }
+        else
+        {
+            this->unpauseState();
+        }
+    }
+}
+
+void GameState::initPauseMenu()
+{
+    this->pmenu = new PauseMenu(*this->window, this->font);
 }
 
 
