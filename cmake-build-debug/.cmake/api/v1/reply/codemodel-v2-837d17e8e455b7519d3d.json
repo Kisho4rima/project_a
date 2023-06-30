@@ -1,0 +1,271 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "box2d-main",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-box2d-main-Debug-4c0f9057c1aa9ba3e2ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "box2d-main"
+				},
+				{
+					"build" : "box2d-main/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-box2d-main.src-Debug-caca15baaa944e914f31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "box2d-main/unit-test",
+					"jsonFile" : "directory-box2d-main.unit-test-Debug-8dd71f736cef858171cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/unit-test",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "box2d-main/extern/glad",
+					"jsonFile" : "directory-box2d-main.extern.glad-Debug-7ab485eebce072e1f228.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/extern/glad",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "box2d-main/extern/glfw",
+					"jsonFile" : "directory-box2d-main.extern.glfw-Debug-2a6fcf39a457ae32020c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/extern/glfw",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "box2d-main/extern/imgui",
+					"jsonFile" : "directory-box2d-main.extern.imgui-Debug-ff16e54a2ab79a1c5a19.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/extern/imgui",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "box2d-main/extern/sajson",
+					"jsonFile" : "directory-box2d-main.extern.sajson-Debug-d90c592c512176e18faa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/extern/sajson",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "box2d-main/testbed",
+					"jsonFile" : "directory-box2d-main.testbed-Debug-477bde8ae2210931337c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "box2d-main/testbed",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "project_a",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "box2d",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "box2d::@ca74e888b301a252f8bb",
+					"jsonFile" : "target-box2d-Debug-b8720bf3f64d9e43b888.json",
+					"name" : "box2d",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "glad::@c94e77f1d27516f5ca60",
+					"jsonFile" : "target-glad-Debug-dacce8a9ab995694c18e.json",
+					"name" : "glad",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@3a35c13053453bd083dc",
+					"jsonFile" : "target-glfw-Debug-6d5d2b9224ecfc722d2d.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "imgui::@d90cf1ddb732c7143ad6",
+					"jsonFile" : "target-imgui-Debug-f8a22e11df1ad4acbc04.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "project_a::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-project_a-Debug-503e43374ad9e430e115.json",
+					"name" : "project_a",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sajson::@1eb076942b79baa8db89",
+					"jsonFile" : "target-sajson-Debug-eb88f1fc2bc71a9bab2d.json",
+					"name" : "sajson",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "testbed::@f314643b52f291a961a7",
+					"jsonFile" : "target-testbed-Debug-3fba683e4713985d2177.json",
+					"name" : "testbed",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "unit_test::@f46d754f23f6085100ed",
+					"jsonFile" : "target-unit_test-Debug-515a47b0fc01d6c810e0.json",
+					"name" : "unit_test",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/amirfh/Documents/project_a/cmake-build-debug",
+		"source" : "/home/amirfh/Documents/project_a"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

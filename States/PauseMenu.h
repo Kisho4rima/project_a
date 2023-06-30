@@ -12,7 +12,6 @@
 
 #include "../Resource Files/Button.h"
 
-
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
@@ -26,8 +25,12 @@ public:
     ~PauseMenu();
 
     //functions
-    void update();
+    const bool isButtonPressed(const std::string key);
+    void update(const sf::Vector2f &mousePos);
     void render(sf::RenderTarget *target);
+    void addButtons(const std::string key, float y, const std::string text);
+
+    std::map<std::string, Button*> &getButtons();
 
 private:
     sf::Font &font;

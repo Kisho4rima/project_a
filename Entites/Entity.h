@@ -9,6 +9,8 @@ public:
     Entity();
     ~Entity();
 
+    sf::Sprite sprite;
+
     //Component functions
     void setTexture(sf::Texture &texture);
     void createMovementComponent(const float maxVelocity, const float acceleration, const float deceleration);
@@ -26,7 +28,7 @@ private:
     void initVariables();
 
 protected:
-    sf::Sprite sprite;
+    //sf::Sprite sprite;
 
     MovementComponent *movementComponent;
     AnimationComponent *animationComponent;

@@ -39,7 +39,7 @@ void Button::render(sf::RenderTarget *target) {
 
 }
 
-void Button::update(const sf::Vector2f mousePos) {
+void Button::update(const sf::Vector2f &mousePos) {
 
     //Updated den boolean Wert für wenn man über den button hovert und pressed
 

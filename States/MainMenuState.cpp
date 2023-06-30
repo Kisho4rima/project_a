@@ -86,17 +86,17 @@ void MainMenuState::initButtons()
         sf::Color(70, 70, 70, 200), sf::Color(250, 250, 250, 250), sf::Color(20, 20, 20, 50),
         sf::Color(70, 70, 70, 0), sf::Color(150, 150, 150, 0), sf::Color(20, 20, 20, 0));
 
-    this->buttons["SETTINGS"] = new Button(1350, 750, 250, 80,
+    this->buttons["SETTINGS_STATE"] = new Button(1350.f, 750.f, 250.f, 80.f,
          &this->font, "Settings", 50,
         sf::Color(70, 70, 70, 200), sf::Color(250, 250, 250, 250), sf::Color(20, 20, 20, 50),
         sf::Color(70, 70, 70, 0), sf::Color(150, 150, 150, 0), sf::Color(20, 20, 20, 0));
 
-    this->buttons["EDITOR_STATE"] = new Button(1350, 850, 250, 80,
+    this->buttons["EDITOR_STATE"] = new Button(1350.f, 850.f, 250.f, 80.f,
         &this->font, "Editor", 50,
         sf::Color(70, 70, 70, 200), sf::Color(250, 250, 250, 250), sf::Color(20, 20, 20, 50),
         sf::Color(70, 70, 70, 0), sf::Color(150, 150, 150, 0), sf::Color(20, 20, 20, 0));
 
-    this->buttons["EXIT_STATE"] = new Button(1350, 1000, 250, 80,
+    this->buttons["EXIT_STATE"] = new Button(1350.f, 1000.f, 250.f, 80.f,
         &this->font, "Quit", 50,
         sf::Color(70, 70, 70, 200), sf::Color(250, 250, 250, 250), sf::Color(20, 20, 20, 50),
         sf::Color(70, 70, 70, 0), sf::Color(150, 150, 150, 0), sf::Color(20, 20, 20, 0));
@@ -114,6 +114,12 @@ void MainMenuState::updateButtons()
     if (this->buttons["GAME_STATE"]->isPressed())
     {
         this->states->push(new GameState(this->window, this->supportedKeys, this->states));
+    }
+
+    //Settings
+    if (this->buttons["SETTINGS_STATE"]->isPressed())
+    {
+        this->states->push(reinterpret_cast<State *const>(new SettingsState(this->window, this->supportedKeys, this->states)));
     }
 
     //Editor
@@ -148,7 +154,7 @@ void MainMenuState::initBackground()
     this->background.setSize(sf::Vector2f(static_cast<float>(this->window->getSize().x),
         static_cast<float>(this->window->getSize().y)));
 
-    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/SecondBackground.png"))
+    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/MainMenu (1).jpg"))
     {
         throw "Error_failed_to_load_main_menu_state_background";
     }

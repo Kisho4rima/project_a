@@ -10,11 +10,13 @@ public:
     virtual ~State();
 
     const bool& getQuit() const;
+    const bool getKeytime();
     void pauseState();
     void unpauseState();
 
     void endState();
     virtual void updateMousePos();
+    virtual void updateKeytime(const float deltaTime);
     virtual void updateInput(const float& deltaTime) = 0;
     virtual void update(const float& deltaTime) = 0;
     virtual void render(sf::RenderTarget* target = nullptr) = 0;
@@ -26,6 +28,8 @@ protected:
     std::map<std::string, int> keybinds;
     bool quit;
     bool paused;
+    float keytime;
+    float keytimeMax;
 
     //track the mouse position
     sf::Vector2i mousePosScreen;

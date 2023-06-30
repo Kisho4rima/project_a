@@ -3,9 +3,10 @@
 
 #include "State.h"
 #include "PauseMenu.h"
-#include "../Entites/World.h"
-#include "SFML/Window.hpp"
-#include "SFML/Graphics.hpp"
+#include "../Entites/Player.h"
+#include "../Components/MovementComponent.h"
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
 
@@ -19,23 +20,29 @@ public:
     //Functions
     void updateInput(const float &deltaTime);
     void updatePlayerInput(const float& deltaTime);
+    void updatePauseMenuButtons();
     void update(const float& deltaTime);
     void render(sf::RenderTarget* target = nullptr);
 
 
 private:
     Player *player;
-    World *map;
     PauseMenu *pmenu;
     sf::Font font;
+
+    sf::RectangleShape ground;
+    sf::Texture backgroundTexture;
+    sf::RectangleShape background;
 
     //Functions
     void initKeybinds();
     void initFonts();
+    void initBackground();
     void initTextures();
     void initPauseMenu();
     void initPlayers();
-    void initCollisionScreen();
+    void initGround();
+    void checkCollision();
 
     void render(sf::RenderWindow *target);
 };

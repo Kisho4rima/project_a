@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/amirf/Documents/project_a/box2d-main
+# Install script for directory: /home/amirfh/Documents/project_a/box2d-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/project_a")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,22 +39,22 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/amirf/Documents/project_a/box2d-main/include/box2d")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/amirfh/Documents/project_a/box2d-main/include/box2d")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/src/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/unit-test/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/glad/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/glfw/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/imgui/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/extern/sajson/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/project_a/cmake-build-debug/box2d-main/testbed/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/src/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/unit-test/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/extern/glad/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/extern/glfw/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/extern/imgui/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/extern/sajson/cmake_install.cmake")
+  include("/home/amirfh/Documents/project_a/cmake-build-debug/box2d-main/testbed/cmake_install.cmake")
 
 endif()
 
