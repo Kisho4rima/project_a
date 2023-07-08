@@ -26,20 +26,13 @@ public:
 
     void hit();
     int attackDamage;
-    float attackTimer;
-    float attackDelay;
+    float attackDuration;
+	bool hasDamaged;
 
     float xOffset;
     float yOffset = 550.f;
     float attackWidth = 200.f;
     float attackHeight = 250.f;
-
-    //Wegamachen
-    bool readyToDamage = false;
-    float damageDelay;
-    float maxDamageDelay;
-    bool hasDamaged;
-
 
 private:
     sf::Vector2f position;
@@ -49,12 +42,6 @@ private:
     std::string attackDirection;
 
     void setBossPosition(float x, float y);
-
-    bool isAttacking;
-    float attackCooldown;
-    float attackCooldownTimer;
-    bool canAttack;
-
 
     sf::Vector2f getPosition() const;
 };

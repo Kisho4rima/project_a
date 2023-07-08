@@ -1,7 +1,6 @@
 #ifndef PROJECT_A_PLAYER_H
 #define PROJECT_A_PLAYER_H
 
-#include "Player.h"
 #include "Entity.h"
 #include <SFML/Graphics.hpp>
 #include "box2d/box2d.h"
@@ -25,9 +24,8 @@ public:
     void pushback();
 
 
-    void takeDamage(int damage, float currentTime);
+    void takeDamage(int damage);
     int playerHealth;
-    float lastDamageTime;
     float damageCoolDown;
     sf::Clock gameClock;
     sf::RectangleShape healthBar;

@@ -52,11 +52,6 @@ void GameState::update(const float& deltaTime)
         this->playTime();
         sf::Time elapsed = gameTime.getElapsedTime() - pausedTime;
 
-
-        if (this->boss->attackCollisionBox.getGlobalBounds().intersects(this->player->collisionBox.getGlobalBounds()))
-        {
-            this->player->takeDamage(this->boss->attackDamage, currentTime);
-        }
         this->player->updateHealthBar(this->player->healthBar);
 
         if (player->getHealth() <= 0)
