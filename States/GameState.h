@@ -4,6 +4,7 @@
 #include "State.h"
 #include "PauseMenu.h"
 #include "../Entites/Player.h"
+#include "../Entites/Boss.h"
 #include "../Components/MovementComponent.h"
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
@@ -27,6 +28,7 @@ public:
 
 private:
     Player *player;
+    Boss *boss;
     PauseMenu *pmenu;
     sf::Font font;
 
@@ -42,7 +44,12 @@ private:
     void initPauseMenu();
     void initPlayers();
     void initGround();
-    void checkCollision();
+    void checkPlayerCollisionWithGround();
+    void checkBossCollisionWithGround();
+    void checkPlayerCollisionWithBoss();
+
+    void initBoss();
+
 
     void render(sf::RenderWindow *target);
 };

@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../bin/libsajson.a CMakeFiles/sajson.dir/sajson.cpp.o
-/usr/bin/ranlib ../../bin/libsajson.a
+C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\ar.exe qc ..\..\bin\libsajson.a CMakeFiles/sajson.dir/sajson.cpp.obj
+C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\ranlib.exe ..\..\bin\libsajson.a

@@ -22,10 +22,26 @@ public:
     //Functions
     virtual void update(const float &deltaTime);
     void jump();
+    void pushback();
+
+
+    void takeDamage(int damage);
+    int playerHealth;
+    sf::RectangleShape healthBar;
+    void updateHealthBar(sf::RectangleShape &healthBar);
+    int getHealth();
+
+    sf::RectangleShape collisionBox;
+
+    sf::Vector2f getPosition() const;
+
 
 private:
     //Variables
     sf::Vector2f playerSize;
+
+    void death();
+
 
     /*Dient dazu, um die ausrichtung des Sprites zu erkennen und je nachdem die idle animation in die Richtung abzuspielen,
     der die der Sprite schaut*/
@@ -34,6 +50,7 @@ private:
     //Ini functions
     void initVariables();
     void initComponents();
+
 
 
 protected:

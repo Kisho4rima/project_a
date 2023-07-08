@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amirfh/Documents/project_a/box2d-main/extern/imgui/imgui.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.o" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.o.d"
-  "/home/amirfh/Documents/project_a/box2d-main/extern/imgui/imgui_demo.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o.d"
-  "/home/amirfh/Documents/project_a/box2d-main/extern/imgui/imgui_draw.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o.d"
-  "/home/amirfh/Documents/project_a/box2d-main/extern/imgui/imgui_widgets.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.obj" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui.cpp.obj.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_demo.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.obj" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.obj.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_draw.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.obj" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.obj.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/imgui/imgui_widgets.cpp" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.obj" "gcc" "box2d-main/extern/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.obj.d"
   )
 
 # Targets to which this target links.

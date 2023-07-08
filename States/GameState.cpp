@@ -11,7 +11,9 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
     this->initPauseMenu();
     this->initPlayers();
     this->initGround();
-    this->checkCollision();
+    this->checkPlayerCollisionWithGround();
+    this->initBoss();
+    this->checkBossCollisionWithGround();
 }
 
 //Destructor
@@ -19,6 +21,7 @@ GameState::~GameState()
 {
     delete this->pmenu;
     delete this->player;
+    delete this->boss;
 }
 
 void GameState::update(const float& deltaTime)
@@ -31,7 +34,26 @@ void GameState::update(const float& deltaTime)
     {
         this->updatePlayerInput(deltaTime);
         this->player->update(deltaTime);
-        this->checkCollision();
+        this->boss->update(*this->player, deltaTime);
+        this->checkPlayerCollisionWithGround();
+        this->checkBossCollisionWithGround();
+
+        if (this->boss->attackCollisionBox.getGlobalBounds().intersects(this->player->collisionBox.getGlobalBounds()))
+        {
+            this->player->takeDamage(this->boss->attackDamage);
+        }
+        this->player->updateHealthBar(this->player->healthBar);
+
+        if (player->getHealth() <= 0)
+        {
+            //todesdings
+        }
+        else
+        {
+            player->healthBar.setSize(sf::Vector2f((int)player->getHealth(), player->healthBar.getSize().y));
+        }
+
+
     }
     else
     {
@@ -44,6 +66,8 @@ void GameState::update(const float& deltaTime)
     {
         this->player->jumpCooldown -= deltaTime;
     }
+
+
 }
 
 void GameState::render(sf::RenderTarget* target)
@@ -54,7 +78,13 @@ void GameState::render(sf::RenderTarget* target)
     }
 
     this->player->render(target);
+    this->boss->render(target);
     target->draw(this->ground);
+    target->draw(this->player->collisionBox);
+    target->draw(this->boss->collisionBoxBoss);
+    target->draw(this->boss->attackCollisionBox);
+    target->draw(this->boss->pushBackCollision);
+    target->draw(this->player->healthBar);
 
     if (this->paused)
     {
@@ -130,14 +160,24 @@ void GameState::initBackground()
 
 void GameState::initTextures()
 {
-    if (!this->textures["PLAYER_SHEET"].loadFromFile("../Assets/Sprites/Player/IdleAndRun.png")) {
+    if (!this->textures["PLAYER_SHEET"].loadFromFile("../Assets/Sprites/Player/Fire_WarriorFireSword-Sheet.png")) {
         std::cerr << "ERROR::NON_CRITICAL::GAMESTATE::COULD_NOT_LOAD_PLAYER_IDLE_TEXTURE" << std::endl;
+    }
+
+    if (!this->textures["BOSS_SHEET"].loadFromFile("../Assets/Sprites/Boss/boss_idle.png"))
+    {
+        std::cerr << "ERROR::NON_CRITICAL::GAMESTSTATE::COULD_NOT_LOAD_BOSS_TEXTURE" << std::endl;
     }
 }
 
 void GameState::initPlayers()
 {
     this->player = new Player(0,0, this->textures["PLAYER_SHEET"]);
+}
+
+void GameState::initBoss()
+{
+    this->boss = new Boss(0, 00, this->textures["BOSS_SHEET"]);
 }
 
 
@@ -178,25 +218,47 @@ void GameState::initGround()
     ground.setPosition(0, window->getSize().y - ground.getSize().y);
 }
 
-void GameState::checkCollision()
-{   //Wenn der boden und der Player intersecten
-    if (this->player->sprite.getGlobalBounds().intersects((this->ground.getGlobalBounds())))
+void GameState::checkPlayerCollisionWithGround()
+{
+    sf::Rect<float> playerCollisionBox = this->player->collisionBox.getGlobalBounds();
+    sf::Rect<float> groundBox = this->ground.getGlobalBounds();
+
+    if (playerCollisionBox.intersects(groundBox))
     {
-        //std::cout << "Collision occurred" << std::endl; //Hilfe
-        this->player->setPosition(this->player->sprite.getPosition().x, this->ground.getPosition().y - this->player->sprite.getGlobalBounds().height);
+        float offsetY = this->player->collisionBox.getPosition().y - this->player->sprite.getPosition().y;
+        this->player->setPosition(this->player->sprite.getPosition().x, groundBox.top - playerCollisionBox.height - offsetY);
 
-        //Setzt den Gravitationswert des Spielers
-        this->player->gravity = 50000;
-
+        this->player->gravity = 500;
         this->player->isJumping = false;
     }
     else
     {
-        //std::cout << "No Collision occurd" << std::endl; //Hilfe
         this->player->gravity = 500.8f;
     }
 }
 
+void GameState::checkBossCollisionWithGround()
+{
+    sf::Rect<float> bossCollisionBox = this->boss->collisionBoxBoss.getGlobalBounds();
+    sf::Rect<float> groundBox = this->ground.getGlobalBounds();
+
+    if (bossCollisionBox.intersects(groundBox))
+    {
+        float offsetY = this->boss->collisionBoxBoss.getPosition().y - this->boss->sprite.getPosition().y;
+        this->boss->setPosition(this->boss->sprite.getPosition().x, groundBox.top - bossCollisionBox.height - offsetY);
+    }
+}
+
+void GameState::checkPlayerCollisionWithBoss()
+{
+    sf::Rect<float> playerCollisionBox = this->player->collisionBox.getGlobalBounds();
+    sf::Rect<float> bossCollisionBox = this->boss->collisionBoxBoss.getGlobalBounds();
+
+    if (playerCollisionBox.intersects(bossCollisionBox))
+    {
+
+    }
+}
 
 
 

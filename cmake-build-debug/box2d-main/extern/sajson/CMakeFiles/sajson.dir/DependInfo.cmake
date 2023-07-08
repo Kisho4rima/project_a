@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amirfh/Documents/project_a/box2d-main/extern/sajson/sajson.cpp" "box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.o" "gcc" "box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.o.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/sajson/sajson.cpp" "box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.obj" "gcc" "box2d-main/extern/sajson/CMakeFiles/sajson.dir/sajson.cpp.obj.d"
   )
 
 # Targets to which this target links.

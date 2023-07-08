@@ -29,6 +29,7 @@ public:
     /*Spielt die Animation basierend auf dem angegebenen Key ab. Aktualisiert die Animation des Sprites in regelmäßigen
     Abständen basierend auf der deltaTime*/
     void play(const std::string  key, const float &deltaTime);
+    bool isDone(const std::string key) const;
 
 
 private:
@@ -87,6 +88,10 @@ private:
         void reset(){
             this->timer = 0.f;
             this->currentRect = this->startRect;
+        }
+
+        bool isDone() const {
+            return this->currentRect == this->endRect;
         }
 
     };

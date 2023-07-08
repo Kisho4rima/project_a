@@ -47,6 +47,7 @@ const bool MovementComponent::movingRight()
     return false;
 }
 
+
 //update movement component
 void MovementComponent::update(const float &deltaTime)
 {

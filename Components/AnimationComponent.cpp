@@ -16,8 +16,6 @@ AnimationComponent::~AnimationComponent()
 
 //Functions
 
-
-
 void AnimationComponent::play(const std::string key,  const float &deltaTime)
 {
     this->animations[key]->play(deltaTime);
@@ -30,4 +28,9 @@ void AnimationComponent::addAnimation(const std::string key,
 
     this->animations[key] = new Animation(
         this->sprite, this->textureSheet, animation_timer, start_frame_x, start_frame_y,frames_x, frames_y, width, height);
+}
+
+bool AnimationComponent::isDone(const std::string key) const
+{
+    return this->animations.at(key)->isDone();
 }

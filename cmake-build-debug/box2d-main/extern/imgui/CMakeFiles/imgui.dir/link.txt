@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../bin/libimgui.a CMakeFiles/imgui.dir/imgui.cpp.o CMakeFiles/imgui.dir/imgui_demo.cpp.o CMakeFiles/imgui.dir/imgui_draw.cpp.o CMakeFiles/imgui.dir/imgui_widgets.cpp.o
-/usr/bin/ranlib ../../bin/libimgui.a
+C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\ar.exe qc ..\..\bin\libimgui.a CMakeFiles/imgui.dir/imgui.cpp.obj CMakeFiles/imgui.dir/imgui_demo.cpp.obj CMakeFiles/imgui.dir/imgui_draw.cpp.obj CMakeFiles/imgui.dir/imgui_widgets.cpp.obj
+C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\ranlib.exe ..\..\bin\libimgui.a

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amirfh/Documents/project_a/box2d-main/extern/glad/src/gl.c" "box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.o" "gcc" "box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.o.d"
+  "C:/Users/amirf/Documents/project_a/box2d-main/extern/glad/src/gl.c" "box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj" "gcc" "box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj.d"
   )
 
 # Targets to which this target links.
