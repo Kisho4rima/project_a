@@ -3392,7 +3392,9 @@ CMakeFiles/project_a.dir/States/GameState.cpp.obj: C:/Users/amirf/Documents/proj
   C:/Users/amirf/Documents/project_a/States/PauseMenu.h \
   C:/Users/amirf/Documents/project_a/Resource\ Files/Button.h \
   C:/Users/amirf/Documents/project_a/Entites/Boss.h \
-  C:/Users/amirf/Documents/project_a/Components/MovementComponent.h
+  C:/Users/amirf/Documents/project_a/Components/MovementComponent.h \
+  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h
 
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: C:/Users/amirf/Documents/project_a/States/MainMenuState.cpp \
   C:/Users/amirf/Documents/project_a/States/MainMenuState.h \
@@ -5570,6 +5572,10 @@ C:/Users/amirf/Documents/project_a/States/PauseMenu.h:
 C:/Users/amirf/Documents/project_a/States/SettingsState.h:
 
 C:/Users/amirf/Documents/project_a/Src/main.cpp:
+
+C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip:
+
+C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h:
 
 C:/Users/amirf/Documents/project_a/States/MainMenuState.cpp:
 

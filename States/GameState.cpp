@@ -1,4 +1,6 @@
 #include "GameState.h"
+#include <sstream>
+#include <iomanip>
 
 //Constructor
 GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states)
@@ -14,6 +16,13 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
     this->checkPlayerCollisionWithGround();
     this->initBoss();
     this->checkBossCollisionWithGround();
+    this->playTime();
+
+    this->timerText.setFont(font);
+    this->timerText.setCharacterSize(24);
+    this->timerText.setFillColor(sf::Color::Black);
+    this->timerText.setPosition(sf::Vector2f(this->window->getSize().x / 2, 60.f));
+    this->timerText.setScale(3.f, 3.f);
 }
 
 //Destructor
@@ -29,18 +38,24 @@ void GameState::update(const float& deltaTime)
     this->updateMousePos();
     this->updateKeytime(deltaTime);
     this->updateInput(deltaTime);
+    //pausedTime += gameTime.getElapsedTime() - timeBeforePause;
 
     if (!this->paused)
     {
+        float currentTime = this->clock.getElapsedTime().asSeconds();
+
         this->updatePlayerInput(deltaTime);
         this->player->update(deltaTime);
-        this->boss->update(*this->player, deltaTime);
+        this->boss->update(*this->player, deltaTime, currentTime);
         this->checkPlayerCollisionWithGround();
         this->checkBossCollisionWithGround();
+        this->playTime();
+        sf::Time elapsed = gameTime.getElapsedTime() - pausedTime;
+
 
         if (this->boss->attackCollisionBox.getGlobalBounds().intersects(this->player->collisionBox.getGlobalBounds()))
         {
-            this->player->takeDamage(this->boss->attackDamage);
+            this->player->takeDamage(this->boss->attackDamage, currentTime);
         }
         this->player->updateHealthBar(this->player->healthBar);
 
@@ -51,6 +66,7 @@ void GameState::update(const float& deltaTime)
         else
         {
             player->healthBar.setSize(sf::Vector2f((int)player->getHealth(), player->healthBar.getSize().y));
+
         }
 
 
@@ -67,7 +83,6 @@ void GameState::update(const float& deltaTime)
         this->player->jumpCooldown -= deltaTime;
     }
 
-
 }
 
 void GameState::render(sf::RenderTarget* target)
@@ -76,15 +91,18 @@ void GameState::render(sf::RenderTarget* target)
     {
         target = this->window;
     }
-
+    target->draw(this->ground);
+    target->draw(this->background);
     this->player->render(target);
     this->boss->render(target);
-    target->draw(this->ground);
+    //target->draw(this->ground);
     target->draw(this->player->collisionBox);
     target->draw(this->boss->collisionBoxBoss);
     target->draw(this->boss->attackCollisionBox);
     target->draw(this->boss->pushBackCollision);
     target->draw(this->player->healthBar);
+    target->draw(this->timerText);
+
 
     if (this->paused)
     {
@@ -150,7 +168,7 @@ void GameState::initBackground()
     this->background.setSize(sf::Vector2f(static_cast<float>(this->window->getSize().x),
                                           static_cast<float>(this->window->getSize().y)));
 
-    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/MainMenu (1).jpg"))
+    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/GamState.jpg"))
     {
         throw "Error_failed_to_load_main_menu_state_background";
     }
@@ -188,13 +206,16 @@ void GameState::updateInput(const float &deltaTime)
         if (!this->paused)
         {
             this->pauseState();
+            this->timeBeforePause = gameTime.getElapsedTime();  // Speichern Sie den Zeitpunkt der Pause
         }
         else
         {
             this->unpauseState();
+            this->pausedTime += gameTime.getElapsedTime() - this->timeBeforePause;  // Addieren Sie die Dauer der Pause zur Gesamtpausenzeit
         }
     }
 }
+
 
 void GameState::initPauseMenu()
 {
@@ -258,6 +279,21 @@ void GameState::checkPlayerCollisionWithBoss()
     {
 
     }
+}
+
+void GameState::playTime()
+{
+    sf::Time elapsed = gameTime.getElapsedTime() - pausedTime;
+    int seconds = elapsed.asSeconds();
+    int minutes = seconds / 60;
+    seconds %= 60;
+
+    std::stringstream ss;
+    ss << std::setw(2) << std::setfill('0') << minutes;
+    ss << ":";
+    ss << std::setw(2) << std::setfill('0') << seconds;
+
+    timerText.setString(ss.str());
 }
 
 

@@ -36,6 +36,13 @@ private:
     sf::Texture backgroundTexture;
     sf::RectangleShape background;
 
+    sf::Clock clock;
+
+    sf::Clock gameTime;
+    sf::Text timerText;
+    sf::Time pausedTime;
+    sf::Time timeBeforePause;
+
     //Functions
     void initKeybinds();
     void initFonts();
@@ -47,6 +54,7 @@ private:
     void checkPlayerCollisionWithGround();
     void checkBossCollisionWithGround();
     void checkPlayerCollisionWithBoss();
+    void playTime();
 
     void initBoss();
 

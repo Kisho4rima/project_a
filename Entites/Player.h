@@ -25,8 +25,11 @@ public:
     void pushback();
 
 
-    void takeDamage(int damage);
+    void takeDamage(int damage, float currentTime);
     int playerHealth;
+    float lastDamageTime;
+    float damageCoolDown;
+    sf::Clock gameClock;
     sf::RectangleShape healthBar;
     void updateHealthBar(sf::RectangleShape &healthBar);
     int getHealth();
@@ -46,6 +49,8 @@ private:
     /*Dient dazu, um die ausrichtung des Sprites zu erkennen und je nachdem die idle animation in die Richtung abzuspielen,
     der die der Sprite schaut*/
     int lastMove;
+
+    bool isInContactWithBoss;
 
     //Ini functions
     void initVariables();

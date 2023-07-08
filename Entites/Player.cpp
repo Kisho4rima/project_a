@@ -5,7 +5,7 @@
 
 //Constructor
 Player::Player(float x, float y, sf::Texture &texture_sheet)
-    : jumpCooldown(0.f), playerHealth(500)
+    : jumpCooldown(0.f), playerHealth(500), lastDamageTime(0.f)
 {
     this->initVariables();
     this->setPosition(x, y);
@@ -37,6 +37,9 @@ Player::Player(float x, float y, sf::Texture &texture_sheet)
     this->healthBar.setOutlineColor(sf::Color::Black);
     this->healthBar.setFillColor(sf::Color::Green);
     this->healthBar.setOutlineThickness(1.f);
+
+    this->damageCoolDown = 1.25f;
+    this->lastDamageTime = 20.5f;
 }
 
 //Destructor
@@ -134,6 +137,8 @@ void Player::update(const float &deltaTime)
 
     this->healthBar.setPosition(100, 100);
     this->healthBar.setSize(sf::Vector2f(500, 30));
+
+    float currentTime = gameClock.getElapsedTime().asSeconds();
 }
 
 void Player::jump()
@@ -150,14 +155,20 @@ sf::Vector2f Player::getPosition() const
     return this->sprite.getPosition();
 }
 
-void Player::takeDamage(int damage)
+void Player::takeDamage(int damage, float currentTime)
 {
-    playerHealth -= damage;
-    std::cout << "Player took " << damage << " damage. Current health: " << this->playerHealth << std::endl;
-
-    if (playerHealth < 0)
+    if (currentTime - lastDamageTime >= damageCoolDown)
     {
-        playerHealth = 0;
+        playerHealth -= damage;
+        lastDamageTime = currentTime;
+
+
+        //std::cout << "Player took " << damage << " damage. Current health: " << this->playerHealth << std::endl;
+
+        if (playerHealth < 0)
+        {
+            playerHealth = 0;
+        }
     }
 }
 
@@ -175,6 +186,7 @@ void Player::updateHealthBar(sf::RectangleShape &healthBar)
 {
     healthBar.setSize(sf::Vector2f(this->playerHealth, healthBar.getSize().y));
 }
+
 
 
 

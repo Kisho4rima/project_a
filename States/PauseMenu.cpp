@@ -25,7 +25,6 @@ PauseMenu::PauseMenu(sf::RenderWindow &window, sf::Font &font)
         this->container.getPosition().x + this->container.getSize().x / 2.f - this->menuText.getGlobalBounds().width / 2.f,
         this->container.getPosition().y + 20.f);
 
-
 }
 
 PauseMenu::~PauseMenu()

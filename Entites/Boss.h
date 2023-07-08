@@ -16,7 +16,7 @@ public:
     Boss(float x, float y, sf::Texture &texture);
     ~Boss();
 
-    void update(Player &player, const float &deltaTime);
+    void update(Player &player, const float &deltaTime, float currentTime);
     void setPosition(const float x, const float y);
     void attack();
 
@@ -36,6 +36,9 @@ public:
 
     //Wegamachen
     bool readyToDamage = false;
+    float damageDelay;
+    float maxDamageDelay;
+    bool hasDamaged;
 
 
 private:

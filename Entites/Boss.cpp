@@ -4,7 +4,7 @@
 #include <cmath>
 
 Boss::Boss(float x, float y, sf::Texture &texture)
-    :position(sf::Vector2f(x, y)), speed(100.f), isAttacking(false), attackDamage(1.f)
+    :position(sf::Vector2f(x, y)), speed(100.f), isAttacking(false), attackDamage(50.f)
 {
     this->createAnimationComponent(texture);
     this->setSpriteSize(sprite,5, 5);
@@ -28,7 +28,11 @@ Boss::Boss(float x, float y, sf::Texture &texture)
     this->attackCooldownTimer = 0.f;
     this->canAttack = true;
     this->attackTimer = 0.f;
-    this->attackDelay = 2.f; //Schaden alle 2 sek
+    this->attackDelay = 90.f; //Schaden alle 2 sek
+    this->damageDelay = 0.f;
+    this->maxDamageDelay = 1000.f; //Warte 1 Sekunde vor Schaden
+    this->readyToDamage = false;
+    this->hasDamaged = false;
 }
 
 Boss::~Boss()
@@ -38,8 +42,7 @@ Boss::~Boss()
 
 
 //Boss bewegt sich zum Sprite hin und Angriffe
-void Boss::update(Player &player, const float &deltaTime)
-{
+void Boss::update(Player &player, const float &deltaTime, float currentTime) {
     // Get player and boss collision boxes.
     sf::Rect<float> playerCollisionBox = player.collisionBox.getGlobalBounds();
     sf::Rect<float> bossCollisionBox = this->collisionBoxBoss.getGlobalBounds();
@@ -50,52 +53,41 @@ void Boss::update(Player &player, const float &deltaTime)
     sf::Vector2f futureBossCollisionBox = this->sprite.getPosition();
 
     // If the boss is to the left of the player, move right.
-    if (bossCollisionBox.left < playerCollisionBox.left)
-    {
+    if (bossCollisionBox.left < playerCollisionBox.left) {
         futureBossCollisionBox.x += this->speed * deltaTime;
     }
 
         // If the boss is to the right of the player, move left.
-    else if (bossCollisionBox.left > playerCollisionBox.left)
-    {
+    else if (bossCollisionBox.left > playerCollisionBox.left) {
         futureBossCollisionBox.x -= this->speed * deltaTime;
     }
 
     float distanceToPlayer = std::abs(bossCollisionBox.left - playerCollisionBox.left);
 
     // Check ob der Player in range ist und der Boss nicht schon angreift
-    if (distanceToPlayer <= attackRange && !this->isAttacking && this->canAttack)
-    {
+    if (distanceToPlayer <= attackRange && !this->isAttacking && this->canAttack) {
         //std::cout << "Boss is in attack mode!" << std::endl;
 
         //If the boss is to the left of the player, attack right.
-        if (bossCollisionBox.left < playerCollisionBox.left)
-        {
+        if (bossCollisionBox.left < playerCollisionBox.left) {
             this->animationComponent->play("ATTACK_RIGHT", deltaTime);
             this->isAttacking = true;
             this->attackDirection = "right";
             //std::cout << "Boss ist links vom player";
         }
-        // If the boss is to the right of the player, attack left.
-        else
-        {
+            // If the boss is to the right of the player, attack left.
+        else {
             this->animationComponent->play("ATTACK_LEFT", deltaTime);
             this->isAttacking = true;
             this->attackDirection = "left";
             //std::cout << "Boss ist rechts vom player";
         }
-    }
-
-    else if (!this->isAttacking)
-    {
+    } else if (!this->isAttacking) {
         this->sprite.setPosition(futureBossCollisionBox.x, this->sprite.getPosition().y);
-        this->collisionBoxBoss.setPosition(futureBossCollisionBox.x +552.f, this->sprite.getPosition().y + 280.f);
-        if (bossCollisionBox.left < playerCollisionBox.left)
-        {
+        this->collisionBoxBoss.setPosition(futureBossCollisionBox.x + 552.f, this->sprite.getPosition().y + 280.f);
+        if (bossCollisionBox.left < playerCollisionBox.left) {
             this->animationComponent->play("RUN_RIGHT", deltaTime);
-        }
-        else
-        {
+        } else {
             this->animationComponent->play("RUN_LEFT", deltaTime);
         }
     }
@@ -155,98 +147,105 @@ void Boss::update(Player &player, const float &deltaTime)
 
     // CollisionBox Position update damit er mit dem Sprite übereinstimmt
     this->collisionBoxBoss.setPosition(this->sprite.getPosition().x + 552.f, this->sprite.getPosition().y + 280.f);
-    this->collisionBoxBoss.setSize(sf::Vector2f(this->sprite.getGlobalBounds().width - 1150.f, this->sprite.getGlobalBounds().height - 290.f));
+    this->collisionBoxBoss.setSize(
+            sf::Vector2f(this->sprite.getGlobalBounds().width - 1150.f, this->sprite.getGlobalBounds().height - 290.f));
 
     //Pushback KollisionBox, falls der sprite mit dem Boss Kollidiert wird er geknockbackt
     this->pushBackCollision.setFillColor(sf::Color::Transparent);
     this->pushBackCollision.setOutlineThickness(2.f);
     this->pushBackCollision.setOutlineColor(sf::Color::Cyan);
     this->pushBackCollision.setSize(sf::Vector2f(attackWidth + 100, attackHeight / 1.f));
-    this->pushBackCollision.setPosition(this->sprite.getPosition().x +550, this->sprite.getPosition().y + 550);
+    this->pushBackCollision.setPosition(this->sprite.getPosition().x + 550, this->sprite.getPosition().y + 550);
 
-    if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds()))
-    {
+    if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
         float pushBackDistance = 50.0f;
 
-        if (player.getPosition().x < this->getPosition().x)
-        {
+        if (player.getPosition().x < this->getPosition().x) {
             // Spieler steht links vom Boss, stoße den Spieler nach links zurück
             player.setPosition(player.getPosition().x - pushBackDistance, player.getPosition().y);
-        }
-        else
-        {
+        } else {
             // Spieler steht rechts vom Boss, stoße den Spieler nach rechts zurück
             player.setPosition(player.getPosition().x + pushBackDistance, player.getPosition().y);
         }
     }
 
-    if (this->attackCooldownTimer >= this->attackCooldown)
-    {
+    if (this->attackCooldownTimer >= this->attackCooldown) {
         //std::cout << "Attack cooldown is over!" << std::endl;
         this->attackCooldownTimer = 0.f;
         this->canAttack = true;
         //std::cout << "canAttack: " << canAttack;
-    }
-    else
-    {
+    } else {
         this->attackCooldownTimer += deltaTime;
     }
 
-    if (this->isAttacking && this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds()))
-    {
+    if (this->isAttacking &&
+        this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
         this->attackTimer += deltaTime;
 
-        if (this->attackTimer >= this->attackDelay)
-        {
-            player.takeDamage(this->attackDamage);
+        if (this->attackTimer >= this->attackDelay) {
+            player.takeDamage(this->attackDamage, currentTime);
             this->attackTimer = 0.0f;
         }
-        if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT"))
-        {
+        if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT")) {
             this->isAttacking = false;
             this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
         }
-    }
-    else
-    {
+    } else {
         // Wenn der Boss nicht angreift, setzen Sie die Größe der Angriffskollisionsbox auf 0.
         this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
     }
 
 
-    if (this->isAttacking && this->canAttack) {
+    if (this->isAttacking && this->canAttack)
+    {
         this->canAttack = false;
+        this->hasDamaged = false;
 
         this->animationComponent->play(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT", deltaTime);
 
         // Positioniere die attackCollisionBox basierend auf xOffset und yOffset.
-        if (this->attackDirection == "right") {
+        if (this->attackDirection == "right")
+        {
             xOffset = 1050.f;
-        } else {
+        }
+        else
+        {
             xOffset = 190.f;
         }
-        this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset, this->sprite.getPosition().y + yOffset);
+        this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset,
+                                             this->sprite.getPosition().y + yOffset);
         this->attackCollisionBox.setSize(sf::Vector2f(attackWidth, attackHeight));
 
         // Wenn die Animation fertig ist, bereiten Sie sich darauf vor, in der nächsten Frame Schaden zu verursachen
-        if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT")) {
+        if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT"))
+        {
             this->isAttacking = false;
             this->readyToDamage = true;
+            this->damageDelay = 0.f;
         }
-    } else if (this->readyToDamage) {
-        // Wenn wir bereit sind, Schaden zu verursachen und der Spieler in der attackCollisionBox ist, verursachen Sie Schaden
-        if (this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
-            player.takeDamage(this->attackDamage);
-        }
-        this->readyToDamage = false;
+    }
+    else if (this->readyToDamage)
+    {
+        this->damageDelay += deltaTime; // Erhöhen die Schadensverzögerung
+        std::cout << "Ready to damage! Has damaged: " << this->hasDamaged << ", Damage delay: " << this->damageDelay << std::endl;  // Debug message
 
-        // Setze die Größe der attackCollisionBox auf 0
-        this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
-    } else {
-        // Setze die Größe der attackCollisionBox auf 0, wenn der Boss nicht angreift.
-        this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
+        if (!this->hasDamaged && this->damageDelay >= this->maxDamageDelay)
+        {
+            if (this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds()))
+            {
+                player.takeDamage(this->attackDamage, currentTime);
+                std::cout << "Player took damage! Health is now " << player.getHealth() << std::endl;
+                this->hasDamaged = true;
+                this->readyToDamage = false;
+            }
+
+
+        }
+            // Setze die Größe der attackCollisionBox auf 0, wenn der Boss nicht angreift.
+            this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
     }
 }
+
 
 //Legt Position auf dem Screen Fest
 void Boss::setBossPosition(float x, float y)
