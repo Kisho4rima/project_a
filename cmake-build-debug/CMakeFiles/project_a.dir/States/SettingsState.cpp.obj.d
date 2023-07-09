@@ -3,7 +3,6 @@ CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: \
  C:\Users\amirf\Documents\project_a\States\SettingsState.h \
  C:\Users\amirf\Documents\project_a\States\State.h \
  C:/Users/amirf/Documents/project_a/Entites/Player.h \
- C:/Users/amirf/Documents/project_a/Entites/Player.h \
  C:/Users/amirf/Documents/project_a/Entites/Entity.h \
  C:/Users/amirf/Documents/project_a/Components/MovementComponent.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
@@ -366,4 +365,5 @@ CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/b2_revolute_joint.h \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/b2_weld_joint.h \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/b2_wheel_joint.h \
+ C:/Users/amirf/Documents/project_a/Entites/Boss.h \
  C:/Users/amirf/Documents/project_a/Resource\ Files/Button.h

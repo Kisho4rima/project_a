@@ -1,10 +1,11 @@
 #include "GameState.h"
+#include "EndGameMenu.h"
 #include <sstream>
 #include <iomanip>
 
 //Constructor
 GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states)
-    : State(window, supportedKeys, states)
+    : State(window, supportedKeys, states), gameEnded(false)
 {
     this->initKeybinds();
     this->initFonts();
@@ -18,11 +19,25 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
     this->checkBossCollisionWithGround();
     this->playTime();
 
+
     this->timerText.setFont(font);
     this->timerText.setCharacterSize(24);
     this->timerText.setFillColor(sf::Color::Black);
-    this->timerText.setPosition(sf::Vector2f(this->window->getSize().x / 2, 60.f));
+    this->timerText.setPosition(sf::Vector2f(this->window->getSize().x / 2 - 140, 60.f));
     this->timerText.setScale(3.f, 3.f);
+
+    //Boss name
+    this->boss->bossName.setFillColor(sf::Color::White);
+    this->boss->bossName.setString("FIRE DEMON");
+    this->boss->bossName.setPosition(sf::Vector2f(2500, 50));
+    this->boss->bossName.setFont(font);
+
+    //Player Name
+    this->player->playerName.setFillColor(sf::Color::White);
+    this->player->playerName.setString("RYUEN");
+    this->player->playerName.setPosition(sf::Vector2f(100, 50));
+    this->player->playerName.setFont(font);
+
 }
 
 //Destructor
@@ -31,6 +46,7 @@ GameState::~GameState()
     delete this->pmenu;
     delete this->player;
     delete this->boss;
+    //delete this->endGameMenu;
 }
 
 void GameState::update(const float& deltaTime)
@@ -53,18 +69,8 @@ void GameState::update(const float& deltaTime)
         sf::Time elapsed = gameTime.getElapsedTime() - pausedTime;
 
         this->player->updateHealthBar(this->player->healthBar);
-
-        if (player->getHealth() <= 0)
-        {
-            //todesdings
-        }
-        else
-        {
-            player->healthBar.setSize(sf::Vector2f((int)player->getHealth(), player->healthBar.getSize().y));
-
-        }
-
-
+        this->player->attack(this->boss);
+        this->boss->updateHealthBar(this->boss->bossHealthBar);
     }
     else
     {
@@ -78,6 +84,15 @@ void GameState::update(const float& deltaTime)
         this->player->jumpCooldown -= deltaTime;
     }
 
+    if (this->player->getHealth() <= 0 || this->boss->getBossHealth() <= 0)
+    {
+        if (!this->gameEnded) {
+            this->gameEnded = true;
+            //this->endGameMenu = new EndGameMenu(*this->window, this->font, this->player->getHealth() > 0, this->elapsedTime);
+        }
+    }
+
+
 }
 
 void GameState::render(sf::RenderTarget* target)
@@ -90,18 +105,26 @@ void GameState::render(sf::RenderTarget* target)
     target->draw(this->background);
     this->player->render(target);
     this->boss->render(target);
-    //target->draw(this->ground);
     target->draw(this->player->collisionBox);
     target->draw(this->boss->collisionBoxBoss);
     target->draw(this->boss->attackCollisionBox);
     target->draw(this->boss->pushBackCollision);
+    target->draw(this->player->playerName);
     target->draw(this->player->healthBar);
     target->draw(this->timerText);
+    target->draw(this->boss->bossName);
+    target->draw(this->boss->bossHealthBar);
+    target->draw(this->player->hitbox);
 
 
     if (this->paused)
     {
         this->pmenu->render(target);
+    }
+
+    if(this->player->getHealth() <= 0)
+    {
+        //this->endGameMenu->render(target);
     }
 }
 
@@ -290,6 +313,10 @@ void GameState::playTime()
 
     timerText.setString(ss.str());
 }
+
+
+
+
 
 
 

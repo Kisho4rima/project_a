@@ -511,6 +511,12 @@
 		<Unit filename="C:/Users/amirf/Documents/project_a/States/EditorState.h">
 			<Option target="project_a"/>
 		</Unit>
+		<Unit filename="C:/Users/amirf/Documents/project_a/States/EndGameMenu.cpp">
+			<Option target="project_a"/>
+		</Unit>
+		<Unit filename="C:/Users/amirf/Documents/project_a/States/EndGameMenu.h">
+			<Option target="project_a"/>
+		</Unit>
 		<Unit filename="C:/Users/amirf/Documents/project_a/States/GameState.cpp">
 			<Option target="project_a"/>
 		</Unit>

@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/amirf/Documents/project_a/Src/Game.cpp" "CMakeFiles/project_a.dir/Src/Game.cpp.obj" "gcc" "CMakeFiles/project_a.dir/Src/Game.cpp.obj.d"
   "C:/Users/amirf/Documents/project_a/Src/main.cpp" "CMakeFiles/project_a.dir/Src/main.cpp.obj" "gcc" "CMakeFiles/project_a.dir/Src/main.cpp.obj.d"
   "C:/Users/amirf/Documents/project_a/States/EditorState.cpp" "CMakeFiles/project_a.dir/States/EditorState.cpp.obj" "gcc" "CMakeFiles/project_a.dir/States/EditorState.cpp.obj.d"
+  "C:/Users/amirf/Documents/project_a/States/EndGameMenu.cpp" "CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj" "gcc" "CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj.d"
   "C:/Users/amirf/Documents/project_a/States/GameState.cpp" "CMakeFiles/project_a.dir/States/GameState.cpp.obj" "gcc" "CMakeFiles/project_a.dir/States/GameState.cpp.obj.d"
   "C:/Users/amirf/Documents/project_a/States/MainMenuState.cpp" "CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj" "gcc" "CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj.d"
   "C:/Users/amirf/Documents/project_a/States/PauseMenu.cpp" "CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj" "gcc" "CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj.d"

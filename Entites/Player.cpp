@@ -16,7 +16,8 @@ Player::Player(float x, float y, sf::Texture &texture_sheet)
     this->animationComponent->addAnimation("IDLE_LEFT", 10.f, 0, 1, 7, 1, 144, 80);
     this->animationComponent->addAnimation("RUN_RIGHT", 10.f, 0, 2, 7, 2, 144, 80);
     this->animationComponent->addAnimation("RUN_LEFT", 10.f, 0, 3, 7, 3, 144, 80);
-    this->animationComponent->addAnimation("ATTACK_E", 10.f, 0, 13, 3, 13, 144, 80);
+    this->animationComponent->addAnimation("ATTACK_E_RIGHT", 0.f, 0, 13, 3, 13, 144, 80);
+    this->animationComponent->addAnimation("ATTACK_E_LEFT", 0.f, 0, 14, 3, 14, 144, 80);
     this->animationComponent->addAnimation("ATTACK_Q", 10.f, 0, 21, 15, 21, 144, 80);
     this->animationComponent->addAnimation("JUMP", 10.f,0, 10, 2, 10, 144, 80);
     this->animationComponent->addAnimation("DEATH", 10.f,0, 26, 10, 26, 144, 80);
@@ -36,7 +37,13 @@ Player::Player(float x, float y, sf::Texture &texture_sheet)
 
     this->healthBar.setOutlineColor(sf::Color::Black);
     this->healthBar.setFillColor(sf::Color::Green);
-    this->healthBar.setOutlineThickness(1.f);
+    this->healthBar.setOutlineThickness(1.5f);
+
+
+    this->damageCoolDown = 1.25f;
+    this->attackTimer = 0.0f;
+    this->attackCooldown = 0.25f;
+    this->attackDamage = 50.f;
 }
 
 //Destructor
@@ -83,16 +90,10 @@ void Player::update(const float &deltaTime)
         lastMove = 1;
         this->animationComponent->play("RUN_RIGHT", deltaTime);
     }
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::E))
-    {
-        this->animationComponent->play("ATTACK_E", deltaTime);
-    }
-
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
+    /*if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
     {
         this->animationComponent->play("ATTACK_Q", deltaTime);
-    }
+    }*/
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
     {
@@ -110,6 +111,11 @@ void Player::update(const float &deltaTime)
     if (this->jumpCooldown > 0.f)
     {
         this->jumpCooldown -= deltaTime;
+    }
+
+    if (attackTimer < attackCooldown)
+    {
+        attackTimer += deltaTime;
     }
 
     // Check for jump input
@@ -136,6 +142,23 @@ void Player::update(const float &deltaTime)
     this->healthBar.setSize(sf::Vector2f(500, 30));
 
     float currentTime = gameClock.getElapsedTime().asSeconds();
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::J) && attackTimer >= attackCooldown) {
+        if (lastMove == 1) {
+            this->animationComponent->play("ATTACK_E_RIGHT", deltaTime);
+            this->createHitbox();
+        }
+        else if (lastMove == -1) {
+            this->animationComponent->play("ATTACK_E_LEFT", deltaTime);
+            this->createHitbox();
+        }
+
+        // Setze den Timer zurück
+        attackTimer = 0.0f;
+    }
+    else {
+        this->destroyHitbox();
+    }
 }
 
 void Player::jump()
@@ -175,6 +198,40 @@ void Player::updateHealthBar(sf::RectangleShape &healthBar)
 {
     healthBar.setSize(sf::Vector2f(this->playerHealth, healthBar.getSize().y));
 }
+
+void Player::createHitbox()
+{
+    this->hitbox.setSize(sf::Vector2f(100.f, 100.f)); // Sie müssen die Größe der Hitbox an Ihr Spiel anpassen
+    this->hitbox.setFillColor(sf::Color::Transparent);
+    this->hitbox.setOutlineThickness(1.f);
+    this->hitbox.setOutlineColor(sf::Color::Yellow);
+
+
+    if (lastMove == 1)
+    {
+        this->hitbox.setPosition(this->sprite.getPosition().x -250 +
+        this->sprite.getGlobalBounds().width, this->sprite.getPosition().y + this->sprite.getGlobalBounds().height / 2);
+    }
+    else
+    {
+        this->hitbox.setPosition(this->sprite.getPosition().x + 200 -
+            this->hitbox.getSize().x, this->sprite.getPosition().y + this->sprite.getGlobalBounds().height / 2);
+    }
+}
+
+void Player::destroyHitbox()
+{
+    this->hitbox.setSize(sf::Vector2f(0.f, 0.f));
+}
+
+void Player::attack(Boss *boss) {
+    // Überprüfe, ob die Hitbox des Spielers die des Bosses trifft.
+    if (this->hitbox.getGlobalBounds().intersects(boss->collisionBoxBoss.getGlobalBounds())) {
+        // Wenn sie sich überschneiden, füge dem Boss Schaden zu.
+        boss->takeDamage(this->attackDamage);
+    }
+}
+
 
 
 

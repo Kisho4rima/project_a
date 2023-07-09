@@ -3,6 +3,7 @@
 
 #include "State.h"
 #include "PauseMenu.h"
+#include "EndGameMenu.h"
 #include "../Entites/Player.h"
 #include "../Entites/Boss.h"
 #include "../Components/MovementComponent.h"
@@ -31,6 +32,7 @@ private:
     Boss *boss;
     PauseMenu *pmenu;
     sf::Font font;
+    //EndGameMenu *endGameMenu;
 
     sf::RectangleShape ground;
     sf::Texture backgroundTexture;
@@ -42,6 +44,9 @@ private:
     sf::Text timerText;
     sf::Time pausedTime;
     sf::Time timeBeforePause;
+
+    bool gameEnded;
+    float elapsedTime;
 
     //Functions
     void initKeybinds();
@@ -55,11 +60,8 @@ private:
     void checkBossCollisionWithGround();
     void checkPlayerCollisionWithBoss();
     void playTime();
-
-    void initBoss();
-
-
     void render(sf::RenderWindow *target);
+    void initBoss();
 };
 
 

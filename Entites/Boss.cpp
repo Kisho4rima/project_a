@@ -1,10 +1,11 @@
 //Wirklich schwer zu implementieren
 
 #include "Boss.h"
+#include "Player.h"
 #include <cmath>
 
 Boss::Boss(float x, float y, sf::Texture &texture)
-    :position(sf::Vector2f(x, y)), speed(100.f), attackDamage(50.f)
+    :position(sf::Vector2f(x, y)), speed(100.f), attackDamage(50.f), bossHealth(500)
 {
     this->createAnimationComponent(texture);
     this->setSpriteSize(sprite,5, 5);
@@ -13,6 +14,7 @@ Boss::Boss(float x, float y, sf::Texture &texture)
     this->animationComponent->addAnimation("RUN_RIGHT", 10.f, 0, 2, 11, 2, 288, 160);
     this->animationComponent->addAnimation("ATTACK_LEFT", 10.f, 0, 3, 14, 3, 288, 160);
     this->animationComponent->addAnimation("ATTACK_RIGHT", 10.f, 0, 4, 14, 4, 288, 160);
+    this->animationComponent->addAnimation("BOSS_DEATH", 10.f, 0, 5, 21, 5, 288, 160);
 
     //Vom Boss selber
     this->collisionBoxBoss.setOutlineColor(sf::Color::Red);
@@ -26,6 +28,15 @@ Boss::Boss(float x, float y, sf::Texture &texture)
 
     this->attackDuration = -1;
     this->hasDamaged = false;
+
+    //Boss Lebensanzeige
+    this->getBossHealth();
+    this->bossHealthBar.setOutlineColor(sf::Color::Black);
+    this->bossHealthBar.setFillColor(sf::Color::Red);
+    this->bossHealthBar.setOutlineThickness(1.f);
+
+
+
 }
 
 Boss::~Boss()
@@ -75,7 +86,7 @@ void Boss::update(Player &player, const float &deltaTime, float currentTime) {
             //std::cout << "Boss ist rechts vom player";
         }
         float xOffset = this->attackDirection == "right" ? 1050 : 190;
-        this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset,
+        this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset -100,
                                              this->sprite.getPosition().y + this->yOffset);
         this->attackCollisionBox.setSize(sf::Vector2f(attackWidth, attackHeight));
     } else if (this->attackDuration == -1) {
@@ -104,7 +115,7 @@ void Boss::update(Player &player, const float &deltaTime, float currentTime) {
     this->pushBackCollision.setPosition(this->sprite.getPosition().x + 550, this->sprite.getPosition().y + 550);
 
     if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
-        float pushBackDistance = 50.0f;
+        float pushBackDistance = 70.0f;
 
         if (player.getPosition().x < this->getPosition().x) {
             // Spieler steht links vom Boss, stoße den Spieler nach links zurück
@@ -127,6 +138,15 @@ void Boss::update(Player &player, const float &deltaTime, float currentTime) {
         this->attackDuration = -1;
         this->hasDamaged = false;
     }
+
+    this->bossHealthBar.setPosition(2250, 100);
+    this->bossHealthBar.setSize(sf::Vector2f(500, 30));
+
+    if (this->bossHealth == 0)
+    {
+        this->animationComponent->play("BOSS_DEATH", deltaTime);
+    }
+
 }
 
 
@@ -149,9 +169,26 @@ sf::Vector2f Boss::getPosition() const
     return this->position;
 }
 
-void Boss::attack()
+int Boss::getBossHealth()
 {
+    return bossHealth;
+}
 
+void Boss::takeDamage(int damage)
+{
+    this->bossHealth -= damage;
+    std::cout << "Boos took damage";
+
+    if (this->bossHealth <= 0)
+    {
+        this->bossHealth = 0;
+    }
+
+}
+
+void Boss::updateHealthBar(sf::RectangleShape &bossHealthBar)
+{
+    bossHealthBar.setSize(sf::Vector2f(this->bossHealth, bossHealthBar.getSize().y));
 }
 
 

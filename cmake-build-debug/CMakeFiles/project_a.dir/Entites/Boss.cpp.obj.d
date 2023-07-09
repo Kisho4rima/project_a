@@ -1,7 +1,6 @@
 CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: \
  C:\Users\amirf\Documents\project_a\Entites\Boss.cpp \
  C:\Users\amirf\Documents\project_a\Entites\Boss.h \
- C:\Users\amirf\Documents\project_a\Entites\Player.h \
  C:\Users\amirf\Documents\project_a\Entites\Entity.h \
  C:/Users/amirf/Documents/project_a/Components/MovementComponent.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
@@ -302,6 +301,7 @@ CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: \
  C:/LIBRAR~1/SFML-2~1.1GC/include/SFML/Audio/SoundFileReader.hpp \
  C:/LIBRAR~1/SFML-2~1.1GC/include/SFML/Audio/SoundFileWriter.hpp \
  C:/Users/amirf/Documents/project_a/Components/AnimationComponent.h \
+ C:\Users\amirf\Documents\project_a\Entites\Player.h \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/box2d.h \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/b2_settings.h \
  C:/Users/amirf/Documents/project_a/box2d-main/include/box2d/b2_types.h \
