@@ -52,10 +52,10 @@ RM = C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\project_a
+CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05\project_a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amirf\Documents\project_a\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include box2d-main/extern/glad/CMakeFiles/glad.dir/depend.make
@@ -70,18 +70,18 @@ include box2d-main/extern/glad/CMakeFiles/glad.dir/flags.make
 
 box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: box2d-main/extern/glad/CMakeFiles/glad.dir/flags.make
 box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: box2d-main/extern/glad/CMakeFiles/glad.dir/includes_C.rsp
-box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: C:/Users/amirf/Documents/project_a/box2d-main/extern/glad/src/gl.c
+box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glad/src/gl.c
 box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj: box2d-main/extern/glad/CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj"
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj -MF CMakeFiles\glad.dir\src\gl.c.obj.d -o CMakeFiles\glad.dir\src\gl.c.obj -c C:\Users\amirf\Documents\project_a\box2d-main\extern\glad\src\gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj -MF CMakeFiles\glad.dir\src\gl.c.obj.d -o CMakeFiles\glad.dir\src\gl.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glad\src\gl.c
 
 box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glad.dir/src/gl.c.i"
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\project_a\box2d-main\extern\glad\src\gl.c > CMakeFiles\glad.dir\src\gl.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glad\src\gl.c > CMakeFiles\glad.dir\src\gl.c.i
 
 box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glad.dir/src/gl.c.s"
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\project_a\box2d-main\extern\glad\src\gl.c -o CMakeFiles\glad.dir\src\gl.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glad\src\gl.c -o CMakeFiles\glad.dir\src\gl.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -93,19 +93,19 @@ glad_EXTERNAL_OBJECTS =
 box2d-main/bin/libglad.a: box2d-main/extern/glad/CMakeFiles/glad.dir/src/gl.c.obj
 box2d-main/bin/libglad.a: box2d-main/extern/glad/CMakeFiles/glad.dir/build.make
 box2d-main/bin/libglad.a: box2d-main/extern/glad/CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ..\..\bin\libglad.a"
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -P CMakeFiles\glad.dir\cmake_clean_target.cmake
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glad.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ..\..\bin\libglad.a"
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -P CMakeFiles\glad.dir\cmake_clean_target.cmake
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glad.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 box2d-main/extern/glad/CMakeFiles/glad.dir/build: box2d-main/bin/libglad.a
 .PHONY : box2d-main/extern/glad/CMakeFiles/glad.dir/build
 
 box2d-main/extern/glad/CMakeFiles/glad.dir/clean:
-	cd /d C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -P CMakeFiles\glad.dir\cmake_clean.cmake
+	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad && $(CMAKE_COMMAND) -P CMakeFiles\glad.dir\cmake_clean.cmake
 .PHONY : box2d-main/extern/glad/CMakeFiles/glad.dir/clean
 
 box2d-main/extern/glad/CMakeFiles/glad.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\project_a C:\Users\amirf\Documents\project_a\box2d-main\extern\glad C:\Users\amirf\Documents\project_a\cmake-build-debug C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad C:\Users\amirf\Documents\project_a\cmake-build-debug\box2d-main\extern\glad\CMakeFiles\glad.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\padi23_05\project_a C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glad C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glad\CMakeFiles\glad.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : box2d-main/extern/glad/CMakeFiles/glad.dir/depend
 

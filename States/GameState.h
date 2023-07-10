@@ -3,7 +3,7 @@
 
 #include "State.h"
 #include "PauseMenu.h"
-#include "EndGameMenu.h"
+#include "EndScreen.h"
 #include "../Entites/Player.h"
 #include "../Entites/Boss.h"
 #include "../Components/MovementComponent.h"
@@ -23,8 +23,12 @@ public:
     void updateInput(const float &deltaTime);
     void updatePlayerInput(const float& deltaTime);
     void updatePauseMenuButtons();
+    void updateEndScreenButtons();
     void update(const float& deltaTime);
     void render(sf::RenderTarget* target = nullptr);
+
+    float gameEndTime;
+    bool gameJustEnded;
 
 
 private:
@@ -32,7 +36,9 @@ private:
     Boss *boss;
     PauseMenu *pmenu;
     sf::Font font;
-    //EndGameMenu *endGameMenu;
+    EndScreen *endScreen;
+    GameState *gameState;
+
 
     sf::RectangleShape ground;
     sf::Texture backgroundTexture;
@@ -45,7 +51,14 @@ private:
     sf::Time pausedTime;
     sf::Time timeBeforePause;
 
-    bool gameEnded;
+    //Sound
+    sf::Music gameStateMusic;
+    sf::Music victoryTheme;
+    sf::Music defeatTheme;
+    bool victoryThemeStarted;
+    bool defeatThemeStarted;
+
+
     float elapsedTime;
 
     //Functions
@@ -54,6 +67,7 @@ private:
     void initBackground();
     void initTextures();
     void initPauseMenu();
+    void initEndScreen();
     void initPlayers();
     void initGround();
     void checkPlayerCollisionWithGround();

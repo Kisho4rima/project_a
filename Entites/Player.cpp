@@ -5,7 +5,7 @@
 
 //Constructor
 Player::Player(float x, float y, sf::Texture &texture_sheet)
-    : jumpCooldown(0.f), playerHealth(500)
+    : jumpCooldown(0.f), playerHealth(5)
 {
     this->initVariables();
     this->setPosition(x, y);
@@ -22,6 +22,7 @@ Player::Player(float x, float y, sf::Texture &texture_sheet)
     this->animationComponent->addAnimation("JUMP", 10.f,0, 10, 2, 10, 144, 80);
     this->animationComponent->addAnimation("DEATH", 10.f,0, 26, 10, 26, 144, 80);
     this->animationComponent->addAnimation("TAKE_HIT", 10.f,0, 25, 3, 25, 144, 80);
+    this->animationComponent->addAnimation("PLAYER_DEATH", 10.f,0, 26, 3, 26, 144, 80);
 
 
     this->gravity = 15000.8f;
@@ -66,98 +67,95 @@ void Player::initComponents()
 //Spiel verschiedene Animation je nach Richtung in der die Player läuft/guckt
 void Player::update(const float &deltaTime)
 {
-    this->movementComponent->update(deltaTime);
-    this->sprite.move(0, this->gravity * deltaTime);
+    this->isDying = false;
 
-    if (this->movementComponent->idle())
-    {
-        if (lastMove == -1)
-        {
-            this->animationComponent->play("IDLE_LEFT", deltaTime);
-        }
-        else if (lastMove == 1)
-        {
-            this->animationComponent->play("IDLE_RIGHT", deltaTime);
-        }
-    }
-    else if (this->movementComponent->movingLeft())
-    {
-        lastMove = -1;
-        this->animationComponent->play("RUN_LEFT", deltaTime);
-    }
-    else if (this->movementComponent->movingRight())
-    {
-        lastMove = 1;
-        this->animationComponent->play("RUN_RIGHT", deltaTime);
-    }
-    /*if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
-    {
-        this->animationComponent->play("ATTACK_Q", deltaTime);
-    }*/
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-    {
-        this->animationComponent->play("JUMP", deltaTime);
-    }
-
-    if (this->isJumping)
-    {
+    if(!this->playerHealth == 0) {
+        this->movementComponent->update(deltaTime);
         this->sprite.move(0, this->gravity * deltaTime);
-        this->gravity += 1000.5f; //Anpassen um Gravitationskraft zu ändern
-    }
 
-
-    // Reduce jump cooldown
-    if (this->jumpCooldown > 0.f)
-    {
-        this->jumpCooldown -= deltaTime;
-    }
-
-    if (attackTimer < attackCooldown)
-    {
-        attackTimer += deltaTime;
-    }
-
-    // Check for jump input
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && this->jumpCooldown <= 0.f)
-    {
+        if (this->movementComponent->idle()) {
+            if (lastMove == -1) {
+                this->animationComponent->play("IDLE_LEFT", deltaTime);
+            } else if (lastMove == 1) {
+                this->animationComponent->play("IDLE_RIGHT", deltaTime);
+            }
+        } else if (this->movementComponent->movingLeft()) {
+            lastMove = -1;
+            this->animationComponent->play("RUN_LEFT", deltaTime);
+        } else if (this->movementComponent->movingRight()) {
+            lastMove = 1;
+            this->animationComponent->play("RUN_RIGHT", deltaTime);
+        }
+        /*if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
         {
-            this->isJumping = true;
-            this->jumpCooldown = 1.5f; // Set this to the desired cooldown duration in seconds
+            this->animationComponent->play("ATTACK_Q", deltaTime);
+        }*/
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+            this->animationComponent->play("JUMP", deltaTime);
+        }
+
+        if (this->isJumping) {
+            this->sprite.move(0, this->gravity * deltaTime);
+            this->gravity += 1000.5f; //Anpassen um Gravitationskraft zu ändern
+        }
+
+
+        // Reduce jump cooldown
+        if (this->jumpCooldown > 0.f) {
+            this->jumpCooldown -= deltaTime;
+        }
+
+        if (attackTimer < attackCooldown) {
+            attackTimer += deltaTime;
+        }
+
+        // Check for jump input
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && this->jumpCooldown <= 0.f) {
+            {
+                this->isJumping = true;
+                this->jumpCooldown = 1.5f; // Set this to the desired cooldown duration in seconds
+            }
+        }
+
+        //Setzte custom Kollisionbox um den Sprite, da die globalBounds viel zu groß waren
+        this->collisionBox.setPosition(this->sprite.getPosition().x + 135.f, this->sprite.getPosition().y + 110.f);
+        this->collisionBox.setSize(sf::Vector2f(this->sprite.getGlobalBounds().width - 380.f,
+                                                this->sprite.getGlobalBounds().height - 120.f));
+
+        this->healthBar.setPosition(100, 100);
+        this->healthBar.setSize(sf::Vector2f(500, 30));
+
+        float currentTime = gameClock.getElapsedTime().asSeconds();
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::J) && attackTimer >= attackCooldown) {
+            if (lastMove == 1) {
+                this->animationComponent->play("ATTACK_E_RIGHT", deltaTime);
+                this->createHitbox();
+            } else if (lastMove == -1) {
+                this->animationComponent->play("ATTACK_E_LEFT", deltaTime);
+                this->createHitbox();
+            }
+
+            // Setze den Timer zurück
+            attackTimer = 0.0f;
+        } else {
+            this->destroyHitbox();
         }
     }
 
-    /*
-    if (playerHealth == 0)
+    else
     {
-        this->animationComponent->play("DEATH", deltaTime);
-    }
-    */
-
-    //Setzte custom Kollisionbox um den Sprite, da die globalBounds viel zu groß waren
-    this->collisionBox.setPosition(this->sprite.getPosition().x + 135.f, this->sprite.getPosition().y + 110.f);
-    this->collisionBox.setSize(sf::Vector2f(this->sprite.getGlobalBounds().width - 380.f, this->sprite.getGlobalBounds().height - 120.f));
-
-    this->healthBar.setPosition(100, 100);
-    this->healthBar.setSize(sf::Vector2f(500, 30));
-
-    float currentTime = gameClock.getElapsedTime().asSeconds();
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::J) && attackTimer >= attackCooldown) {
-        if (lastMove == 1) {
-            this->animationComponent->play("ATTACK_E_RIGHT", deltaTime);
-            this->createHitbox();
+        if (!this->isDying)
+        {
+            this->animationComponent->play("PLAYER_DEATH", deltaTime);
+            this->isDying = true;
         }
-        else if (lastMove == -1) {
-            this->animationComponent->play("ATTACK_E_LEFT", deltaTime);
-            this->createHitbox();
-        }
-
-        // Setze den Timer zurück
-        attackTimer = 0.0f;
     }
-    else {
-        this->destroyHitbox();
+
+    if (this->isDying && this->animationComponent->isDone("PLAYER_DEATH"))
+    {
+        this->sprite.setColor(sf::Color::Transparent);
     }
 }
 

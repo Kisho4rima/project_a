@@ -46,107 +46,121 @@ Boss::~Boss()
 
 
 //Boss bewegt sich zum Sprite hin und Angriffe
-void Boss::update(Player &player, const float &deltaTime, float currentTime) {
-    // Get player and boss collision boxes.
-    sf::Rect<float> playerCollisionBox = player.collisionBox.getGlobalBounds();
-    sf::Rect<float> bossCollisionBox = this->collisionBoxBoss.getGlobalBounds();
+void Boss::update(Player &player, const float &deltaTime, float currentTime)
+{
+    this->isDying = false;
 
-    //Attackrange
-    float attackRange = 430.f;
+    if (!this->bossHealth == 0) {
+        // Get player and boss collision boxes.
+        sf::Rect<float> playerCollisionBox = player.collisionBox.getGlobalBounds();
+        sf::Rect<float> bossCollisionBox = this->collisionBoxBoss.getGlobalBounds();
 
-    sf::Vector2f futureBossCollisionBox = this->sprite.getPosition();
+        //Attackrange
+        float attackRange = 430.f;
 
-    // If the boss is to the left of the player, move right.
-    if (bossCollisionBox.left < playerCollisionBox.left) {
-        futureBossCollisionBox.x += this->speed * deltaTime;
-    }
+        sf::Vector2f futureBossCollisionBox = this->sprite.getPosition();
 
-        // If the boss is to the right of the player, move left.
-    else if (bossCollisionBox.left > playerCollisionBox.left) {
-        futureBossCollisionBox.x -= this->speed * deltaTime;
-    }
-
-    float distanceToPlayer = std::abs(bossCollisionBox.left - playerCollisionBox.left);
-
-    // Check ob der Player in range ist und der Boss nicht schon angreift
-    if (distanceToPlayer <= attackRange && this->attackDuration == -1) {
-        //std::cout << "Boss is in attack mode!" << std::endl;
-
-        this->attackDuration = 0;
-        //If the boss is to the left of the player, attack right.
+        // If the boss is to the left of the player, move right.
         if (bossCollisionBox.left < playerCollisionBox.left) {
-            this->animationComponent->play("ATTACK_RIGHT", deltaTime);
-            this->attackDirection = "right";
-            //std::cout << "Boss ist links vom player";
+            futureBossCollisionBox.x += this->speed * deltaTime;
         }
-            // If the boss is to the right of the player, attack left.
-        else {
-            this->animationComponent->play("ATTACK_LEFT", deltaTime);
-            this->attackDirection = "left";
-            //std::cout << "Boss ist rechts vom player";
+
+            // If the boss is to the right of the player, move left.
+        else if (bossCollisionBox.left > playerCollisionBox.left) {
+            futureBossCollisionBox.x -= this->speed * deltaTime;
         }
-        float xOffset = this->attackDirection == "right" ? 1050 : 190;
-        this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset -100,
-                                             this->sprite.getPosition().y + this->yOffset);
-        this->attackCollisionBox.setSize(sf::Vector2f(attackWidth, attackHeight));
-    } else if (this->attackDuration == -1) {
-        this->sprite.setPosition(futureBossCollisionBox.x, this->sprite.getPosition().y);
-        this->collisionBoxBoss.setPosition(futureBossCollisionBox.x + 552.f, this->sprite.getPosition().y + 280.f);
-        if (bossCollisionBox.left < playerCollisionBox.left) {
-            this->animationComponent->play("RUN_RIGHT", deltaTime);
+
+        float distanceToPlayer = std::abs(bossCollisionBox.left - playerCollisionBox.left);
+
+        // Check ob der Player in range ist und der Boss nicht schon angreift
+        if (distanceToPlayer <= attackRange && this->attackDuration == -1) {
+            //std::cout << "Boss is in attack mode!" << std::endl;
+
+            this->attackDuration = 0;
+            //If the boss is to the left of the player, attack right.
+            if (bossCollisionBox.left < playerCollisionBox.left) {
+                this->animationComponent->play("ATTACK_RIGHT", deltaTime);
+                this->attackDirection = "right";
+                //std::cout << "Boss ist links vom player";
+            }
+                // If the boss is to the right of the player, attack left.
+            else {
+                this->animationComponent->play("ATTACK_LEFT", deltaTime);
+                this->attackDirection = "left";
+                //std::cout << "Boss ist rechts vom player";
+            }
+            float xOffset = this->attackDirection == "right" ? 1050 : 190;
+            this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset - 100,
+                                                 this->sprite.getPosition().y + this->yOffset);
+            this->attackCollisionBox.setSize(sf::Vector2f(attackWidth, attackHeight));
+        } else if (this->attackDuration == -1) {
+            this->sprite.setPosition(futureBossCollisionBox.x, this->sprite.getPosition().y);
+            this->collisionBoxBoss.setPosition(futureBossCollisionBox.x + 552.f, this->sprite.getPosition().y + 280.f);
+            if (bossCollisionBox.left < playerCollisionBox.left) {
+                this->animationComponent->play("RUN_RIGHT", deltaTime);
+            } else {
+                this->animationComponent->play("RUN_LEFT", deltaTime);
+            }
         } else {
-            this->animationComponent->play("RUN_LEFT", deltaTime);
+            this->animationComponent->play(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT",
+                                           deltaTime);
+            this->attackDuration += deltaTime;
         }
-    } else {
-        this->animationComponent->play(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT", deltaTime);
-        this->attackDuration += deltaTime;
+
+        // CollisionBox Position update damit er mit dem Sprite übereinstimmt
+        this->collisionBoxBoss.setPosition(this->sprite.getPosition().x + 552.f, this->sprite.getPosition().y + 280.f);
+        this->collisionBoxBoss.setSize(
+                sf::Vector2f(this->sprite.getGlobalBounds().width - 1150.f,
+                             this->sprite.getGlobalBounds().height - 290.f));
+
+        //Pushback KollisionBox, falls der sprite mit dem Boss Kollidiert wird er geknockbackt
+        this->pushBackCollision.setFillColor(sf::Color::Transparent);
+        this->pushBackCollision.setOutlineThickness(2.f);
+        this->pushBackCollision.setOutlineColor(sf::Color::Cyan);
+        this->pushBackCollision.setSize(sf::Vector2f(attackWidth + 100, attackHeight / 1.f));
+        this->pushBackCollision.setPosition(this->sprite.getPosition().x + 550, this->sprite.getPosition().y + 550);
+
+        if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
+            float pushBackDistance = 70.0f;
+
+            if (player.getPosition().x < this->getPosition().x) {
+                // Spieler steht links vom Boss, stoße den Spieler nach links zurück
+                player.setPosition(player.getPosition().x - pushBackDistance, player.getPosition().y);
+            } else {
+                // Spieler steht rechts vom Boss, stoße den Spieler nach rechts zurück
+                player.setPosition(player.getPosition().x + pushBackDistance, player.getPosition().y);
+            }
+        }
+
+        if (this->attackDuration > 1 && !this->hasDamaged) {
+            if (this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
+                player.takeDamage(this->attackDamage);
+                this->hasDamaged = true;
+            }
+        }
+
+        if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT")) {
+            this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
+            this->attackDuration = -1;
+            this->hasDamaged = false;
+        }
+    }
+    else
+    {
+        if (!this->isDying)
+        {
+            this->animationComponent->play("BOSS_DEATH", deltaTime);
+            this->isDying = true;
+        }
     }
 
-    // CollisionBox Position update damit er mit dem Sprite übereinstimmt
-    this->collisionBoxBoss.setPosition(this->sprite.getPosition().x + 552.f, this->sprite.getPosition().y + 280.f);
-    this->collisionBoxBoss.setSize(
-            sf::Vector2f(this->sprite.getGlobalBounds().width - 1150.f, this->sprite.getGlobalBounds().height - 290.f));
-
-    //Pushback KollisionBox, falls der sprite mit dem Boss Kollidiert wird er geknockbackt
-    this->pushBackCollision.setFillColor(sf::Color::Transparent);
-    this->pushBackCollision.setOutlineThickness(2.f);
-    this->pushBackCollision.setOutlineColor(sf::Color::Cyan);
-    this->pushBackCollision.setSize(sf::Vector2f(attackWidth + 100, attackHeight / 1.f));
-    this->pushBackCollision.setPosition(this->sprite.getPosition().x + 550, this->sprite.getPosition().y + 550);
-
-    if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
-        float pushBackDistance = 70.0f;
-
-        if (player.getPosition().x < this->getPosition().x) {
-            // Spieler steht links vom Boss, stoße den Spieler nach links zurück
-            player.setPosition(player.getPosition().x - pushBackDistance, player.getPosition().y);
-        } else {
-            // Spieler steht rechts vom Boss, stoße den Spieler nach rechts zurück
-            player.setPosition(player.getPosition().x + pushBackDistance, player.getPosition().y);
-        }
-    }
-
-    if (this->attackDuration > 1 && !this->hasDamaged) {
-        if (this->attackCollisionBox.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
-            player.takeDamage(this->attackDamage);
-            this->hasDamaged = true;
-        }
-    }
-
-    if (this->animationComponent->isDone(this->attackDirection == "right" ? "ATTACK_RIGHT" : "ATTACK_LEFT")) {
-        this->attackCollisionBox.setSize(sf::Vector2f(0.f, 0.f));
-        this->attackDuration = -1;
-        this->hasDamaged = false;
+    if (this->isDying && this->animationComponent->isDone("BOSS_DEATH"))
+    {
+        this->sprite.setColor(sf::Color::Transparent);
     }
 
     this->bossHealthBar.setPosition(2250, 100);
     this->bossHealthBar.setSize(sf::Vector2f(500, 30));
-
-    if (this->bossHealth == 0)
-    {
-        this->animationComponent->play("BOSS_DEATH", deltaTime);
-    }
-
 }
 
 

@@ -34,6 +34,7 @@ public:
     sf::RectangleShape healthBar;
     void updateHealthBar(sf::RectangleShape &healthBar);
     int getHealth();
+    bool isDying;
 
     sf::Text playerName;
 

@@ -1,6 +1,6 @@
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: \
- C:\Users\amirf\Documents\project_a\Components\AnimationComponent.cpp \
- C:\Users\amirf\Documents\project_a\Components\AnimationComponent.h \
+ C:\Users\amirf\Documents\padi23_05\project_a\Components\AnimationComponent.cpp \
+ C:\Users\amirf\Documents\padi23_05\project_a\Components\AnimationComponent.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \

@@ -56,10 +56,10 @@ RM = C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\project_a
+CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05\project_a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amirf\Documents\project_a\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles C:\Users\amirf\Documents\project_a\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -480,29 +480,29 @@ States/EditorState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EditorState.cpp.s
 .PHONY : States/EditorState.cpp.s
 
-States/EndGameMenu.obj: States/EndGameMenu.cpp.obj
-.PHONY : States/EndGameMenu.obj
+States/EndScreen.obj: States/EndScreen.cpp.obj
+.PHONY : States/EndScreen.obj
 
 # target to build an object file
-States/EndGameMenu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj
-.PHONY : States/EndGameMenu.cpp.obj
+States/EndScreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndScreen.cpp.obj
+.PHONY : States/EndScreen.cpp.obj
 
-States/EndGameMenu.i: States/EndGameMenu.cpp.i
-.PHONY : States/EndGameMenu.i
+States/EndScreen.i: States/EndScreen.cpp.i
+.PHONY : States/EndScreen.i
 
 # target to preprocess a source file
-States/EndGameMenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndGameMenu.cpp.i
-.PHONY : States/EndGameMenu.cpp.i
+States/EndScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndScreen.cpp.i
+.PHONY : States/EndScreen.cpp.i
 
-States/EndGameMenu.s: States/EndGameMenu.cpp.s
-.PHONY : States/EndGameMenu.s
+States/EndScreen.s: States/EndScreen.cpp.s
+.PHONY : States/EndScreen.s
 
 # target to generate assembly for a file
-States/EndGameMenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndGameMenu.cpp.s
-.PHONY : States/EndGameMenu.cpp.s
+States/EndScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/States/EndScreen.cpp.s
+.PHONY : States/EndScreen.cpp.s
 
 States/GameState.obj: States/GameState.cpp.obj
 .PHONY : States/GameState.obj
@@ -671,9 +671,9 @@ help:
 	@echo ... States/EditorState.obj
 	@echo ... States/EditorState.i
 	@echo ... States/EditorState.s
-	@echo ... States/EndGameMenu.obj
-	@echo ... States/EndGameMenu.i
-	@echo ... States/EndGameMenu.s
+	@echo ... States/EndScreen.obj
+	@echo ... States/EndScreen.i
+	@echo ... States/EndScreen.s
 	@echo ... States/GameState.obj
 	@echo ... States/GameState.i
 	@echo ... States/GameState.s

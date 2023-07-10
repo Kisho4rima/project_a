@@ -154,7 +154,7 @@ void MainMenuState::initBackground()
     this->background.setSize(sf::Vector2f(static_cast<float>(this->window->getSize().x),
         static_cast<float>(this->window->getSize().y)));
 
-    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/MainMenu (1).jpg"))
+    if(!this->backgroundTexture.loadFromFile("../Assets/Backgrounds/MainMenuBackground2.jpg"))
     {
         throw "Error_failed_to_load_main_menu_state_background";
     }

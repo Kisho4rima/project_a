@@ -52,10 +52,10 @@ RM = C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\project_a
+CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05\project_a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amirf\Documents\project_a\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project_a.dir/depend.make
@@ -70,228 +70,228 @@ include CMakeFiles/project_a.dir/flags.make
 
 CMakeFiles/project_a.dir/Src/main.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Src/main.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Src/main.cpp.obj: C:/Users/amirf/Documents/project_a/Src/main.cpp
+CMakeFiles/project_a.dir/Src/main.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Src/main.cpp
 CMakeFiles/project_a.dir/Src/main.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_a.dir/Src/main.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Src/main.cpp.obj -MF CMakeFiles\project_a.dir\Src\main.cpp.obj.d -o CMakeFiles\project_a.dir\Src\main.cpp.obj -c C:\Users\amirf\Documents\project_a\Src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_a.dir/Src/main.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Src/main.cpp.obj -MF CMakeFiles\project_a.dir\Src\main.cpp.obj.d -o CMakeFiles\project_a.dir\Src\main.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Src\main.cpp
 
 CMakeFiles/project_a.dir/Src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Src/main.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Src\main.cpp > CMakeFiles\project_a.dir\Src\main.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Src\main.cpp > CMakeFiles\project_a.dir\Src\main.cpp.i
 
 CMakeFiles/project_a.dir/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Src/main.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Src\main.cpp -o CMakeFiles\project_a.dir\Src\main.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Src\main.cpp -o CMakeFiles\project_a.dir\Src\main.cpp.s
 
 CMakeFiles/project_a.dir/Entites/Player.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Entites/Player.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Entites/Player.cpp.obj: C:/Users/amirf/Documents/project_a/Entites/Player.cpp
+CMakeFiles/project_a.dir/Entites/Player.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Entites/Player.cpp
 CMakeFiles/project_a.dir/Entites/Player.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_a.dir/Entites/Player.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Player.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Player.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Player.cpp.obj -c C:\Users\amirf\Documents\project_a\Entites\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_a.dir/Entites/Player.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Player.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Player.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Player.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Entites\Player.cpp
 
 CMakeFiles/project_a.dir/Entites/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Entites/Player.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Entites\Player.cpp > CMakeFiles\project_a.dir\Entites\Player.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Entites\Player.cpp > CMakeFiles\project_a.dir\Entites\Player.cpp.i
 
 CMakeFiles/project_a.dir/Entites/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Entites/Player.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Entites\Player.cpp -o CMakeFiles\project_a.dir\Entites\Player.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Entites\Player.cpp -o CMakeFiles\project_a.dir\Entites\Player.cpp.s
 
 CMakeFiles/project_a.dir/Src/Game.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Src/Game.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Src/Game.cpp.obj: C:/Users/amirf/Documents/project_a/Src/Game.cpp
+CMakeFiles/project_a.dir/Src/Game.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Src/Game.cpp
 CMakeFiles/project_a.dir/Src/Game.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_a.dir/Src/Game.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Src/Game.cpp.obj -MF CMakeFiles\project_a.dir\Src\Game.cpp.obj.d -o CMakeFiles\project_a.dir\Src\Game.cpp.obj -c C:\Users\amirf\Documents\project_a\Src\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_a.dir/Src/Game.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Src/Game.cpp.obj -MF CMakeFiles\project_a.dir\Src\Game.cpp.obj.d -o CMakeFiles\project_a.dir\Src\Game.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Src\Game.cpp
 
 CMakeFiles/project_a.dir/Src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Src/Game.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Src\Game.cpp > CMakeFiles\project_a.dir\Src\Game.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Src\Game.cpp > CMakeFiles\project_a.dir\Src\Game.cpp.i
 
 CMakeFiles/project_a.dir/Src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Src/Game.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Src\Game.cpp -o CMakeFiles\project_a.dir\Src\Game.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Src\Game.cpp -o CMakeFiles\project_a.dir\Src\Game.cpp.s
 
 CMakeFiles/project_a.dir/States/State.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/State.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/State.cpp.obj: C:/Users/amirf/Documents/project_a/States/State.cpp
+CMakeFiles/project_a.dir/States/State.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/State.cpp
 CMakeFiles/project_a.dir/States/State.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_a.dir/States/State.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/State.cpp.obj -MF CMakeFiles\project_a.dir\States\State.cpp.obj.d -o CMakeFiles\project_a.dir\States\State.cpp.obj -c C:\Users\amirf\Documents\project_a\States\State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_a.dir/States/State.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/State.cpp.obj -MF CMakeFiles\project_a.dir\States\State.cpp.obj.d -o CMakeFiles\project_a.dir\States\State.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\State.cpp
 
 CMakeFiles/project_a.dir/States/State.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/State.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\State.cpp > CMakeFiles\project_a.dir\States\State.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\State.cpp > CMakeFiles\project_a.dir\States\State.cpp.i
 
 CMakeFiles/project_a.dir/States/State.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/State.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\State.cpp -o CMakeFiles\project_a.dir\States\State.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\State.cpp -o CMakeFiles\project_a.dir\States\State.cpp.s
 
 CMakeFiles/project_a.dir/States/GameState.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/GameState.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/GameState.cpp.obj: C:/Users/amirf/Documents/project_a/States/GameState.cpp
+CMakeFiles/project_a.dir/States/GameState.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/GameState.cpp
 CMakeFiles/project_a.dir/States/GameState.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_a.dir/States/GameState.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/GameState.cpp.obj -MF CMakeFiles\project_a.dir\States\GameState.cpp.obj.d -o CMakeFiles\project_a.dir\States\GameState.cpp.obj -c C:\Users\amirf\Documents\project_a\States\GameState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_a.dir/States/GameState.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/GameState.cpp.obj -MF CMakeFiles\project_a.dir\States\GameState.cpp.obj.d -o CMakeFiles\project_a.dir\States\GameState.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\GameState.cpp
 
 CMakeFiles/project_a.dir/States/GameState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/GameState.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\GameState.cpp > CMakeFiles\project_a.dir\States\GameState.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\GameState.cpp > CMakeFiles\project_a.dir\States\GameState.cpp.i
 
 CMakeFiles/project_a.dir/States/GameState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/GameState.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\GameState.cpp -o CMakeFiles\project_a.dir\States\GameState.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\GameState.cpp -o CMakeFiles\project_a.dir\States\GameState.cpp.s
 
 CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: C:/Users/amirf/Documents/project_a/Entites/Entity.cpp
+CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Entites/Entity.cpp
 CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_a.dir/Entites/Entity.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Entity.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Entity.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Entity.cpp.obj -c C:\Users\amirf\Documents\project_a\Entites\Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_a.dir/Entites/Entity.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Entity.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Entity.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Entity.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Entites\Entity.cpp
 
 CMakeFiles/project_a.dir/Entites/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Entites/Entity.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Entites\Entity.cpp > CMakeFiles\project_a.dir\Entites\Entity.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Entites\Entity.cpp > CMakeFiles\project_a.dir\Entites\Entity.cpp.i
 
 CMakeFiles/project_a.dir/Entites/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Entites/Entity.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Entites\Entity.cpp -o CMakeFiles\project_a.dir\Entites\Entity.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Entites\Entity.cpp -o CMakeFiles\project_a.dir\Entites\Entity.cpp.s
 
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: C:/Users/amirf/Documents/project_a/States/MainMenuState.cpp
+CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/MainMenuState.cpp
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj -MF CMakeFiles\project_a.dir\States\MainMenuState.cpp.obj.d -o CMakeFiles\project_a.dir\States\MainMenuState.cpp.obj -c C:\Users\amirf\Documents\project_a\States\MainMenuState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/MainMenuState.cpp.obj -MF CMakeFiles\project_a.dir\States\MainMenuState.cpp.obj.d -o CMakeFiles\project_a.dir\States\MainMenuState.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\MainMenuState.cpp
 
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/MainMenuState.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\MainMenuState.cpp > CMakeFiles\project_a.dir\States\MainMenuState.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\MainMenuState.cpp > CMakeFiles\project_a.dir\States\MainMenuState.cpp.i
 
 CMakeFiles/project_a.dir/States/MainMenuState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/MainMenuState.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\MainMenuState.cpp -o CMakeFiles\project_a.dir\States\MainMenuState.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\MainMenuState.cpp -o CMakeFiles\project_a.dir\States\MainMenuState.cpp.s
 
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: C:/Users/amirf/Documents/project_a/Resource\ Files/Button.cpp
+CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Resource\ Files/Button.cpp
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj -MF CMakeFiles\project_a.dir\Resource_Files\Button.cpp.obj.d -o CMakeFiles\project_a.dir\Resource_Files\Button.cpp.obj -c "C:\Users\amirf\Documents\project_a\Resource Files\Button.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj -MF CMakeFiles\project_a.dir\Resource_Files\Button.cpp.obj.d -o CMakeFiles\project_a.dir\Resource_Files\Button.cpp.obj -c "C:\Users\amirf\Documents\padi23_05\project_a\Resource Files\Button.cpp"
 
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Resource_Files/Button.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\amirf\Documents\project_a\Resource Files\Button.cpp" > CMakeFiles\project_a.dir\Resource_Files\Button.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\amirf\Documents\padi23_05\project_a\Resource Files\Button.cpp" > CMakeFiles\project_a.dir\Resource_Files\Button.cpp.i
 
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Resource_Files/Button.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\amirf\Documents\project_a\Resource Files\Button.cpp" -o CMakeFiles\project_a.dir\Resource_Files\Button.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\amirf\Documents\padi23_05\project_a\Resource Files\Button.cpp" -o CMakeFiles\project_a.dir\Resource_Files\Button.cpp.s
 
 CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: C:/Users/amirf/Documents/project_a/Components/MovementComponent.cpp
+CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Components/MovementComponent.cpp
 CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj -MF CMakeFiles\project_a.dir\Components\MovementComponent.cpp.obj.d -o CMakeFiles\project_a.dir\Components\MovementComponent.cpp.obj -c C:\Users\amirf\Documents\project_a\Components\MovementComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Components/MovementComponent.cpp.obj -MF CMakeFiles\project_a.dir\Components\MovementComponent.cpp.obj.d -o CMakeFiles\project_a.dir\Components\MovementComponent.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Components\MovementComponent.cpp
 
 CMakeFiles/project_a.dir/Components/MovementComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Components/MovementComponent.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Components\MovementComponent.cpp > CMakeFiles\project_a.dir\Components\MovementComponent.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Components\MovementComponent.cpp > CMakeFiles\project_a.dir\Components\MovementComponent.cpp.i
 
 CMakeFiles/project_a.dir/Components/MovementComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Components/MovementComponent.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Components\MovementComponent.cpp -o CMakeFiles\project_a.dir\Components\MovementComponent.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Components\MovementComponent.cpp -o CMakeFiles\project_a.dir\Components\MovementComponent.cpp.s
 
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: C:/Users/amirf/Documents/project_a/Components/AnimationComponent.cpp
+CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Components/AnimationComponent.cpp
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj -MF CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.obj.d -o CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.obj -c C:\Users\amirf\Documents\project_a\Components\AnimationComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.obj -MF CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.obj.d -o CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Components\AnimationComponent.cpp
 
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Components\AnimationComponent.cpp > CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Components\AnimationComponent.cpp > CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.i
 
 CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Components/AnimationComponent.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Components\AnimationComponent.cpp -o CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Components\AnimationComponent.cpp -o CMakeFiles\project_a.dir\Components\AnimationComponent.cpp.s
 
 CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/EditorState.cpp.obj: C:/Users/amirf/Documents/project_a/States/EditorState.cpp
+CMakeFiles/project_a.dir/States/EditorState.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/EditorState.cpp
 CMakeFiles/project_a.dir/States/EditorState.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_a.dir/States/EditorState.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/EditorState.cpp.obj -MF CMakeFiles\project_a.dir\States\EditorState.cpp.obj.d -o CMakeFiles\project_a.dir\States\EditorState.cpp.obj -c C:\Users\amirf\Documents\project_a\States\EditorState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_a.dir/States/EditorState.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/EditorState.cpp.obj -MF CMakeFiles\project_a.dir\States\EditorState.cpp.obj.d -o CMakeFiles\project_a.dir\States\EditorState.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\EditorState.cpp
 
 CMakeFiles/project_a.dir/States/EditorState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/EditorState.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\EditorState.cpp > CMakeFiles\project_a.dir\States\EditorState.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\EditorState.cpp > CMakeFiles\project_a.dir\States\EditorState.cpp.i
 
 CMakeFiles/project_a.dir/States/EditorState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/EditorState.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\EditorState.cpp -o CMakeFiles\project_a.dir\States\EditorState.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\EditorState.cpp -o CMakeFiles\project_a.dir\States\EditorState.cpp.s
 
 CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: C:/Users/amirf/Documents/project_a/States/PauseMenu.cpp
+CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/PauseMenu.cpp
 CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj -MF CMakeFiles\project_a.dir\States\PauseMenu.cpp.obj.d -o CMakeFiles\project_a.dir\States\PauseMenu.cpp.obj -c C:\Users\amirf\Documents\project_a\States\PauseMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj -MF CMakeFiles\project_a.dir\States\PauseMenu.cpp.obj.d -o CMakeFiles\project_a.dir\States\PauseMenu.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\PauseMenu.cpp
 
 CMakeFiles/project_a.dir/States/PauseMenu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/PauseMenu.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\PauseMenu.cpp > CMakeFiles\project_a.dir\States\PauseMenu.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\PauseMenu.cpp > CMakeFiles\project_a.dir\States\PauseMenu.cpp.i
 
 CMakeFiles/project_a.dir/States/PauseMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/PauseMenu.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\PauseMenu.cpp -o CMakeFiles\project_a.dir\States\PauseMenu.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\PauseMenu.cpp -o CMakeFiles\project_a.dir\States\PauseMenu.cpp.s
 
 CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: C:/Users/amirf/Documents/project_a/States/SettingsState.cpp
+CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/SettingsState.cpp
 CMakeFiles/project_a.dir/States/SettingsState.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_a.dir/States/SettingsState.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/SettingsState.cpp.obj -MF CMakeFiles\project_a.dir\States\SettingsState.cpp.obj.d -o CMakeFiles\project_a.dir\States\SettingsState.cpp.obj -c C:\Users\amirf\Documents\project_a\States\SettingsState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_a.dir/States/SettingsState.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/SettingsState.cpp.obj -MF CMakeFiles\project_a.dir\States\SettingsState.cpp.obj.d -o CMakeFiles\project_a.dir\States\SettingsState.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\SettingsState.cpp
 
 CMakeFiles/project_a.dir/States/SettingsState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/SettingsState.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\SettingsState.cpp > CMakeFiles\project_a.dir\States\SettingsState.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\SettingsState.cpp > CMakeFiles\project_a.dir\States\SettingsState.cpp.i
 
 CMakeFiles/project_a.dir/States/SettingsState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/SettingsState.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\SettingsState.cpp -o CMakeFiles\project_a.dir\States\SettingsState.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\SettingsState.cpp -o CMakeFiles\project_a.dir\States\SettingsState.cpp.s
 
 CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: CMakeFiles/project_a.dir/flags.make
 CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: C:/Users/amirf/Documents/project_a/Entites/Boss.cpp
+CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/Entites/Boss.cpp
 CMakeFiles/project_a.dir/Entites/Boss.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_a.dir/Entites/Boss.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Boss.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Boss.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Boss.cpp.obj -c C:\Users\amirf\Documents\project_a\Entites\Boss.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_a.dir/Entites/Boss.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/Entites/Boss.cpp.obj -MF CMakeFiles\project_a.dir\Entites\Boss.cpp.obj.d -o CMakeFiles\project_a.dir\Entites\Boss.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\Entites\Boss.cpp
 
 CMakeFiles/project_a.dir/Entites/Boss.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/Entites/Boss.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\Entites\Boss.cpp > CMakeFiles\project_a.dir\Entites\Boss.cpp.i
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\Entites\Boss.cpp > CMakeFiles\project_a.dir\Entites\Boss.cpp.i
 
 CMakeFiles/project_a.dir/Entites/Boss.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/Entites/Boss.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\Entites\Boss.cpp -o CMakeFiles\project_a.dir\Entites\Boss.cpp.s
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\Entites\Boss.cpp -o CMakeFiles\project_a.dir\Entites\Boss.cpp.s
 
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj: CMakeFiles/project_a.dir/flags.make
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj: C:/Users/amirf/Documents/project_a/States/EndGameMenu.cpp
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj -MF CMakeFiles\project_a.dir\States\EndGameMenu.cpp.obj.d -o CMakeFiles\project_a.dir\States\EndGameMenu.cpp.obj -c C:\Users\amirf\Documents\project_a\States\EndGameMenu.cpp
+CMakeFiles/project_a.dir/States/EndScreen.cpp.obj: CMakeFiles/project_a.dir/flags.make
+CMakeFiles/project_a.dir/States/EndScreen.cpp.obj: CMakeFiles/project_a.dir/includes_CXX.rsp
+CMakeFiles/project_a.dir/States/EndScreen.cpp.obj: C:/Users/amirf/Documents/padi23_05/project_a/States/EndScreen.cpp
+CMakeFiles/project_a.dir/States/EndScreen.cpp.obj: CMakeFiles/project_a.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_a.dir/States/EndScreen.cpp.obj"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_a.dir/States/EndScreen.cpp.obj -MF CMakeFiles\project_a.dir\States\EndScreen.cpp.obj.d -o CMakeFiles\project_a.dir\States\EndScreen.cpp.obj -c C:\Users\amirf\Documents\padi23_05\project_a\States\EndScreen.cpp
 
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/EndGameMenu.cpp.i"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\project_a\States\EndGameMenu.cpp > CMakeFiles\project_a.dir\States\EndGameMenu.cpp.i
+CMakeFiles/project_a.dir/States/EndScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_a.dir/States/EndScreen.cpp.i"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\States\EndScreen.cpp > CMakeFiles\project_a.dir\States\EndScreen.cpp.i
 
-CMakeFiles/project_a.dir/States/EndGameMenu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/EndGameMenu.cpp.s"
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\project_a\States\EndGameMenu.cpp -o CMakeFiles\project_a.dir\States\EndGameMenu.cpp.s
+CMakeFiles/project_a.dir/States/EndScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_a.dir/States/EndScreen.cpp.s"
+	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\States\EndScreen.cpp -o CMakeFiles\project_a.dir\States\EndScreen.cpp.s
 
 # Object files for target project_a
 project_a_OBJECTS = \
@@ -309,7 +309,7 @@ project_a_OBJECTS = \
 "CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj" \
 "CMakeFiles/project_a.dir/States/SettingsState.cpp.obj" \
 "CMakeFiles/project_a.dir/Entites/Boss.cpp.obj" \
-"CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj"
+"CMakeFiles/project_a.dir/States/EndScreen.cpp.obj"
 
 # External object files for target project_a
 project_a_EXTERNAL_OBJECTS =
@@ -328,7 +328,7 @@ project_a.exe: CMakeFiles/project_a.dir/States/EditorState.cpp.obj
 project_a.exe: CMakeFiles/project_a.dir/States/PauseMenu.cpp.obj
 project_a.exe: CMakeFiles/project_a.dir/States/SettingsState.cpp.obj
 project_a.exe: CMakeFiles/project_a.dir/Entites/Boss.cpp.obj
-project_a.exe: CMakeFiles/project_a.dir/States/EndGameMenu.cpp.obj
+project_a.exe: CMakeFiles/project_a.dir/States/EndScreen.cpp.obj
 project_a.exe: CMakeFiles/project_a.dir/build.make
 project_a.exe: C:/libraries/SFML-2.5.1\ GCC/lib/libsfml-graphics-d.a
 project_a.exe: C:/libraries/SFML-2.5.1\ GCC/lib/libsfml-window-d.a
@@ -339,7 +339,7 @@ project_a.exe: C:/libraries/SFML-2.5.1\ GCC/lib/libsfml-system-d.a
 project_a.exe: CMakeFiles/project_a.dir/linkLibs.rsp
 project_a.exe: CMakeFiles/project_a.dir/objects1
 project_a.exe: CMakeFiles/project_a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable project_a.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable project_a.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_a.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -351,6 +351,6 @@ CMakeFiles/project_a.dir/clean:
 .PHONY : CMakeFiles/project_a.dir/clean
 
 CMakeFiles/project_a.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\project_a C:\Users\amirf\Documents\project_a C:\Users\amirf\Documents\project_a\cmake-build-debug C:\Users\amirf\Documents\project_a\cmake-build-debug C:\Users\amirf\Documents\project_a\cmake-build-debug\CMakeFiles\project_a.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\padi23_05\project_a C:\Users\amirf\Documents\padi23_05\project_a C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles\project_a.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project_a.dir/depend
 

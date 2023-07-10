@@ -1,7 +1,7 @@
 CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: \
- C:\Users\amirf\Documents\project_a\Entites\Entity.cpp \
- C:\Users\amirf\Documents\project_a\Entites\Entity.h \
- C:/Users/amirf/Documents/project_a/Components/MovementComponent.h \
+ C:\Users\amirf\Documents\padi23_05\project_a\Entites\Entity.cpp \
+ C:\Users\amirf\Documents\padi23_05\project_a\Entites\Entity.h \
+ C:/Users/amirf/Documents/padi23_05/project_a/Components/MovementComponent.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -299,4 +299,4 @@ CMakeFiles/project_a.dir/Entites/Entity.cpp.obj: \
  C:/LIBRAR~1/SFML-2~1.1GC/include/SFML/Audio/SoundFileFactory.inl \
  C:/LIBRAR~1/SFML-2~1.1GC/include/SFML/Audio/SoundFileReader.hpp \
  C:/LIBRAR~1/SFML-2~1.1GC/include/SFML/Audio/SoundFileWriter.hpp \
- C:/Users/amirf/Documents/project_a/Components/AnimationComponent.h
+ C:/Users/amirf/Documents/padi23_05/project_a/Components/AnimationComponent.h

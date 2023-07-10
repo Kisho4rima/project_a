@@ -42,6 +42,7 @@ public:
 
     void takeDamage(int damage);
     void updateHealthBar(sf::RectangleShape &bossHealthBar);
+    bool isDying;
 
 private:
     sf::Vector2f position;

@@ -1,24 +1,23 @@
 #include "GameState.h"
-#include "EndGameMenu.h"
 #include <sstream>
 #include <iomanip>
 
 //Constructor
 GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states)
-    : State(window, supportedKeys, states), gameEnded(false)
+    : State(window, supportedKeys, states)
 {
     this->initKeybinds();
     this->initFonts();
     this->initBackground();
     this->initTextures();
     this->initPauseMenu();
+    this->initEndScreen();
     this->initPlayers();
     this->initGround();
     this->checkPlayerCollisionWithGround();
     this->initBoss();
     this->checkBossCollisionWithGround();
     this->playTime();
-
 
     this->timerText.setFont(font);
     this->timerText.setCharacterSize(24);
@@ -37,6 +36,10 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
     this->player->playerName.setString("RYUEN");
     this->player->playerName.setPosition(sf::Vector2f(100, 50));
     this->player->playerName.setFont(font);
+
+    this->gameJustEnded = false;
+    this->victoryThemeStarted = false;
+    this->defeatThemeStarted = false;
 
 }
 
@@ -71,11 +74,15 @@ void GameState::update(const float& deltaTime)
         this->player->updateHealthBar(this->player->healthBar);
         this->player->attack(this->boss);
         this->boss->updateHealthBar(this->boss->bossHealthBar);
+
+        this->endScreen->update(this->mousePosView);
+        this->updateEndScreenButtons();
     }
     else
     {
         this->pmenu->update(this->mousePosView);
         this->updatePauseMenuButtons();
+
     }
 
     // Decrement the jump cooldown
@@ -84,14 +91,34 @@ void GameState::update(const float& deltaTime)
         this->player->jumpCooldown -= deltaTime;
     }
 
-    if (this->player->getHealth() <= 0 || this->boss->getBossHealth() <= 0)
+    //Um die Zeit zu kriegen die man dann im EndScreen anzeigen kann
+    if ((this->player->isDying || this->boss->isDying) && !this->gameJustEnded)
     {
-        if (!this->gameEnded) {
-            this->gameEnded = true;
-            //this->endGameMenu = new EndGameMenu(*this->window, this->font, this->player->getHealth() > 0, this->elapsedTime);
-        }
+        this->gameEndTime = this->gameTime.getElapsedTime().asSeconds();
+        this->endScreen->setRequiredTime(this->gameEndTime);
+        this->gameJustEnded = true;
     }
 
+    //Je nachdem ob der Boss oder Player gewinnt, steht da dann Victory oder defeat
+    if (!victoryTheme.openFromFile("../soundtrack/victoryTheme.wav"))
+    {
+        std::cout << "Could not load victoryTheme";
+    }
+    if (!defeatTheme.openFromFile("../soundtrack/defeatTheme.wav"))
+    {
+        std::cout << "could not load defeatTheme";
+    }
+
+    if (this->player->isDying)
+    {
+        this->defeatTheme.play();
+        this->defeatThemeStarted = true;
+    }
+    else if (this->boss->isDying)
+    {
+        this->victoryTheme.play();
+        this->victoryThemeStarted = true;
+    }
 
 }
 
@@ -122,9 +149,15 @@ void GameState::render(sf::RenderTarget* target)
         this->pmenu->render(target);
     }
 
-    if(this->player->getHealth() <= 0)
+    if (this->player->isDying)
     {
-        //this->endGameMenu->render(target);
+        this->endScreen->setMenuText("DEFEAT");
+        this->endScreen->render(this->window);
+    }
+    else if (this->boss->isDying)
+    {
+        this->endScreen->setMenuText("VICTORY");
+        this->endScreen->render(this->window);
     }
 }
 
@@ -250,6 +283,31 @@ void GameState::updatePauseMenuButtons()
     }
 }
 
+void GameState::initEndScreen()
+{
+    this->endScreen = new EndScreen(this->window, this->font);
+
+    this->endScreen->addButtons("Try Again", 800.f, "Try Again");
+
+    this->endScreen->addButtons("Quit", 900.f, "Quit");
+}
+
+void GameState::updateEndScreenButtons()
+{
+    if (this->endScreen->isButtonPressed(("Quit")))
+    {
+        this->endState();
+    }
+
+    if (this->endScreen->isButtonPressed("Try Again"))
+    {
+        this->endState();
+        // Erstelle einen neuen GameState
+        this->states->push(new GameState(window, supportedKeys, states));
+    }
+}
+
+
 void GameState::initGround()
 {
     ground.setFillColor(sf::Color::Black);
@@ -313,6 +371,8 @@ void GameState::playTime()
 
     timerText.setString(ss.str());
 }
+
+
 
 
 
