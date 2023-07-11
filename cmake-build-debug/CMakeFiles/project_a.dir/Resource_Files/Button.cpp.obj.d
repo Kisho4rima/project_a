@@ -1,6 +1,6 @@
 CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj: \
- C:\Users\amirf\Documents\padi23_05\project_a\Resource\ Files\Button.cpp \
- C:\Users\amirf\Documents\padi23_05\project_a\Resource\ Files\Button.h \
+ C:\Users\amirf\Documents\padi23_05\Resource\ Files\Button.cpp \
+ C:\Users\amirf\Documents\padi23_05\Resource\ Files\Button.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Users/amirf/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \

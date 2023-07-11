@@ -5,7 +5,7 @@
 #include <cmath>
 
 Boss::Boss(float x, float y, sf::Texture &texture)
-    :position(sf::Vector2f(x, y)), speed(100.f), attackDamage(50.f), bossHealth(500)
+    :position(sf::Vector2f(x, y)), speed(100.f), attackDamage(250.f), bossHealth(500)
 {
     this->createAnimationComponent(texture);
     this->setSpriteSize(sprite,5, 5);
@@ -35,8 +35,10 @@ Boss::Boss(float x, float y, sf::Texture &texture)
     this->bossHealthBar.setFillColor(sf::Color::Red);
     this->bossHealthBar.setOutlineThickness(1.f);
 
-
-
+    if (!defeatTheme.openFromFile("../soundtrack/defeatTheme.wav"))
+    {
+        std::cout << "could not load defeatTheme";
+    }
 }
 
 Boss::~Boss()
@@ -92,7 +94,7 @@ void Boss::update(Player &player, const float &deltaTime, float currentTime)
             float xOffset = this->attackDirection == "right" ? 1050 : 190;
             this->attackCollisionBox.setPosition(this->sprite.getPosition().x + xOffset - 100,
                                                  this->sprite.getPosition().y + this->yOffset);
-            this->attackCollisionBox.setSize(sf::Vector2f(attackWidth, attackHeight));
+            this->attackCollisionBox.setSize(sf::Vector2f(attackWidth + 120, attackHeight));
         } else if (this->attackDuration == -1) {
             this->sprite.setPosition(futureBossCollisionBox.x, this->sprite.getPosition().y);
             this->collisionBoxBoss.setPosition(futureBossCollisionBox.x + 552.f, this->sprite.getPosition().y + 280.f);
@@ -122,8 +124,8 @@ void Boss::update(Player &player, const float &deltaTime, float currentTime)
 
         if (this->pushBackCollision.getGlobalBounds().intersects(player.collisionBox.getGlobalBounds())) {
             float pushBackDistance = 70.0f;
-
-            if (player.getPosition().x < this->getPosition().x) {
+            float boss_x = this->pushBackCollision.getGlobalBounds().left;
+            if (player.getPosition().x < boss_x) {
                 // Spieler steht links vom Boss, stoße den Spieler nach links zurück
                 player.setPosition(player.getPosition().x - pushBackDistance, player.getPosition().y);
             } else {
@@ -203,6 +205,11 @@ void Boss::takeDamage(int damage)
 void Boss::updateHealthBar(sf::RectangleShape &bossHealthBar)
 {
     bossHealthBar.setSize(sf::Vector2f(this->bossHealth, bossHealthBar.getSize().y));
+}
+
+void Boss::playDefeatTheme()
+{
+    defeatTheme.play();
 }
 
 

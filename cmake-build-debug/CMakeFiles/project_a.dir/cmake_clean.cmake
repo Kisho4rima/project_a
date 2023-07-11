@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_a.dir/Entites/Boss.cpp.obj.d"
   "CMakeFiles/project_a.dir/Entites/Entity.cpp.obj"
   "CMakeFiles/project_a.dir/Entites/Entity.cpp.obj.d"
+  "CMakeFiles/project_a.dir/Entites/FireStream.cpp.obj"
+  "CMakeFiles/project_a.dir/Entites/FireStream.cpp.obj.d"
   "CMakeFiles/project_a.dir/Entites/Player.cpp.obj"
   "CMakeFiles/project_a.dir/Entites/Player.cpp.obj.d"
   "CMakeFiles/project_a.dir/Resource_Files/Button.cpp.obj"

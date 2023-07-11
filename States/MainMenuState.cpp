@@ -8,6 +8,16 @@ MainMenuState::MainMenuState(sf::RenderWindow* window, std::map<std::string, int
     this->initFonts();
     this->initKeybinds();
     this->initButtons();
+
+    if (!this->backgroundTheme.openFromFile("../soundtrack/MainMenuTheme.wav"))
+    {
+        std::cout << "Could not load MainMenu theme";
+    }
+
+    //Hintergrundmusik
+    this->backgroundTheme.setLoop(true);
+    this->backgroundTheme.play();
+    this->backgroundTheme.setVolume(20.f);
 };
 
 MainMenuState::~MainMenuState()
@@ -23,7 +33,6 @@ void MainMenuState::update(const float& deltaTime)
 {
     this->updateMousePos();
     this->updateInput(deltaTime);
-
     this->updateButtons();
 }
 
@@ -36,7 +45,8 @@ void MainMenuState::render(sf::RenderTarget* target)
 
     this->renderButtons(target);
 
-    //Remove later
+    //Zeigt koordinaten an der Maus an. War nur als Hilfe
+    /*
     sf::Text mouseText;
     mouseText.setPosition(this->mousePosView.x, this->mousePosView.y - 50);
     mouseText.setFont(this->font);
@@ -46,6 +56,7 @@ void MainMenuState::render(sf::RenderTarget* target)
     mouseText.setString(ss.str());
 
     target->draw(mouseText);
+     */
 }
 
 void MainMenuState::updateInput(const float &deltaTime) {
@@ -113,7 +124,7 @@ void MainMenuState::updateButtons()
     //New Game
     if (this->buttons["GAME_STATE"]->isPressed())
     {
-        this->states->push(new GameState(this->window, this->supportedKeys, this->states));
+        this->states->push(new GameState(this->window, this->supportedKeys, this->states, this->backgroundTheme));
     }
 
     //Settings

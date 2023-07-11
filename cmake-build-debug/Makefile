@@ -56,10 +56,10 @@ RM = C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05\project_a
+CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,56 +84,11 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles C:\Users\amirf\Documents\padi23_05\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -172,97 +127,6 @@ project_a: cmake_check_build_system
 project_a/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/build
 .PHONY : project_a/fast
-
-#=============================================================================
-# Target rules for targets named box2d
-
-# Build rule for target.
-box2d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 box2d
-.PHONY : box2d
-
-# fast build rule for target.
-box2d/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\src\CMakeFiles\box2d.dir\build.make box2d-main/src/CMakeFiles/box2d.dir/build
-.PHONY : box2d/fast
-
-#=============================================================================
-# Target rules for targets named unit_test
-
-# Build rule for target.
-unit_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 unit_test
-.PHONY : unit_test
-
-# fast build rule for target.
-unit_test/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\unit-test\CMakeFiles\unit_test.dir\build.make box2d-main/unit-test/CMakeFiles/unit_test.dir/build
-.PHONY : unit_test/fast
-
-#=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glad
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\extern\glad\CMakeFiles\glad.dir\build.make box2d-main/extern/glad/CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\extern\glfw\CMakeFiles\glfw.dir\build.make box2d-main/extern/glfw/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named imgui
-
-# Build rule for target.
-imgui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 imgui
-.PHONY : imgui
-
-# fast build rule for target.
-imgui/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\extern\imgui\CMakeFiles\imgui.dir\build.make box2d-main/extern/imgui/CMakeFiles/imgui.dir/build
-.PHONY : imgui/fast
-
-#=============================================================================
-# Target rules for targets named sajson
-
-# Build rule for target.
-sajson: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sajson
-.PHONY : sajson
-
-# fast build rule for target.
-sajson/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\extern\sajson\CMakeFiles\sajson.dir\build.make box2d-main/extern/sajson/CMakeFiles/sajson.dir/build
-.PHONY : sajson/fast
-
-#=============================================================================
-# Target rules for targets named testbed
-
-# Build rule for target.
-testbed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 testbed
-.PHONY : testbed
-
-# fast build rule for target.
-testbed/fast:
-	$(MAKE) $(MAKESILENT) -f box2d-main\testbed\CMakeFiles\testbed.dir\build.make box2d-main/testbed/CMakeFiles/testbed.dir/build
-.PHONY : testbed/fast
 
 Components/AnimationComponent.obj: Components/AnimationComponent.cpp.obj
 .PHONY : Components/AnimationComponent.obj
@@ -359,6 +223,30 @@ Entites/Entity.s: Entites/Entity.cpp.s
 Entites/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/Entites/Entity.cpp.s
 .PHONY : Entites/Entity.cpp.s
+
+Entites/FireStream.obj: Entites/FireStream.cpp.obj
+.PHONY : Entites/FireStream.obj
+
+# target to build an object file
+Entites/FireStream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/Entites/FireStream.cpp.obj
+.PHONY : Entites/FireStream.cpp.obj
+
+Entites/FireStream.i: Entites/FireStream.cpp.i
+.PHONY : Entites/FireStream.i
+
+# target to preprocess a source file
+Entites/FireStream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/Entites/FireStream.cpp.i
+.PHONY : Entites/FireStream.cpp.i
+
+Entites/FireStream.s: Entites/FireStream.cpp.s
+.PHONY : Entites/FireStream.s
+
+# target to generate assembly for a file
+Entites/FireStream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_a.dir\build.make CMakeFiles/project_a.dir/Entites/FireStream.cpp.s
+.PHONY : Entites/FireStream.cpp.s
 
 Entites/Player.obj: Entites/Player.cpp.obj
 .PHONY : Entites/Player.obj
@@ -631,19 +519,8 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... box2d
-	@echo ... glad
-	@echo ... glfw
-	@echo ... imgui
 	@echo ... project_a
-	@echo ... sajson
-	@echo ... testbed
-	@echo ... unit_test
 	@echo ... Components/AnimationComponent.obj
 	@echo ... Components/AnimationComponent.i
 	@echo ... Components/AnimationComponent.s
@@ -656,6 +533,9 @@ help:
 	@echo ... Entites/Entity.obj
 	@echo ... Entites/Entity.i
 	@echo ... Entites/Entity.s
+	@echo ... Entites/FireStream.obj
+	@echo ... Entites/FireStream.i
+	@echo ... Entites/FireStream.s
 	@echo ... Entites/Player.obj
 	@echo ... Entites/Player.i
 	@echo ... Entites/Player.s

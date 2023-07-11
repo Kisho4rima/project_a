@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw
+# Install script for directory: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

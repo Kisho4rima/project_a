@@ -7,6 +7,8 @@
 #include "../Resource Files/Button.h"
 #include "EditorState.h"
 #include "SettingsState.h"
+#include "../Entites/Player.h"
+#include "../Entites/Boss.h"
 
 
 class MainMenuState :
@@ -28,6 +30,7 @@ private:
     sf::Texture backgroundTexture;
     sf::RectangleShape background;
     sf::Font font;
+    sf::Music backgroundTheme;
 
     std::map<std::string, Button*> buttons;
 

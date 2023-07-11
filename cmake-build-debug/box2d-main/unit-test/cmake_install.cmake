@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/unit-test
+# Install script for directory: C:/Users/amirf/Documents/padi23_05/box2d-main/unit-test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

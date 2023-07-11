@@ -43,6 +43,9 @@ public:
     void takeDamage(int damage);
     void updateHealthBar(sf::RectangleShape &bossHealthBar);
     bool isDying;
+    sf::Music defeatTheme;
+    void playDefeatTheme();
+
 
 private:
     sf::Vector2f position;

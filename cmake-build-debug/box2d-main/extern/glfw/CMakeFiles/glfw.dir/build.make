@@ -52,10 +52,10 @@ RM = C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05\project_a
+CMAKE_SOURCE_DIR = C:\Users\amirf\Documents\padi23_05
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\amirf\Documents\padi23_05\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include box2d-main/extern/glfw/CMakeFiles/glfw.dir/depend.make
@@ -70,228 +70,228 @@ include box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/context.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/context.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj -MF CMakeFiles\glfw.dir\src\context.c.obj.d -o CMakeFiles\glfw.dir\src\context.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.obj -MF CMakeFiles\glfw.dir\src\context.c.obj.d -o CMakeFiles\glfw.dir\src\context.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\context.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/context.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\context.c > CMakeFiles\glfw.dir\src\context.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\context.c > CMakeFiles\glfw.dir\src\context.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/context.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\context.c -o CMakeFiles\glfw.dir\src\context.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\context.c -o CMakeFiles\glfw.dir\src\context.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/init.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/init.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj -MF CMakeFiles\glfw.dir\src\init.c.obj.d -o CMakeFiles\glfw.dir\src\init.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.obj -MF CMakeFiles\glfw.dir\src\init.c.obj.d -o CMakeFiles\glfw.dir\src\init.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\init.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/init.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\init.c > CMakeFiles\glfw.dir\src\init.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\init.c > CMakeFiles\glfw.dir\src\init.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/init.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\init.c -o CMakeFiles\glfw.dir\src\init.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\init.c -o CMakeFiles\glfw.dir\src\init.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/input.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/input.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj -MF CMakeFiles\glfw.dir\src\input.c.obj.d -o CMakeFiles\glfw.dir\src\input.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.obj -MF CMakeFiles\glfw.dir\src\input.c.obj.d -o CMakeFiles\glfw.dir\src\input.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\input.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/input.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\input.c > CMakeFiles\glfw.dir\src\input.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\input.c > CMakeFiles\glfw.dir\src\input.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/input.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\input.c -o CMakeFiles\glfw.dir\src\input.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\input.c -o CMakeFiles\glfw.dir\src\input.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/monitor.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/monitor.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj -MF CMakeFiles\glfw.dir\src\monitor.c.obj.d -o CMakeFiles\glfw.dir\src\monitor.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.obj -MF CMakeFiles\glfw.dir\src\monitor.c.obj.d -o CMakeFiles\glfw.dir\src\monitor.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\monitor.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/monitor.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\monitor.c > CMakeFiles\glfw.dir\src\monitor.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\monitor.c > CMakeFiles\glfw.dir\src\monitor.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/monitor.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\monitor.c -o CMakeFiles\glfw.dir\src\monitor.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\monitor.c -o CMakeFiles\glfw.dir\src\monitor.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/vulkan.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/vulkan.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj -MF CMakeFiles\glfw.dir\src\vulkan.c.obj.d -o CMakeFiles\glfw.dir\src\vulkan.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\vulkan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.obj -MF CMakeFiles\glfw.dir\src\vulkan.c.obj.d -o CMakeFiles\glfw.dir\src\vulkan.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\vulkan.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/vulkan.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\vulkan.c > CMakeFiles\glfw.dir\src\vulkan.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\vulkan.c > CMakeFiles\glfw.dir\src\vulkan.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/vulkan.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\vulkan.c -o CMakeFiles\glfw.dir\src\vulkan.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\vulkan.c -o CMakeFiles\glfw.dir\src\vulkan.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/window.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/window.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj -MF CMakeFiles\glfw.dir\src\window.c.obj.d -o CMakeFiles\glfw.dir\src\window.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.obj -MF CMakeFiles\glfw.dir\src\window.c.obj.d -o CMakeFiles\glfw.dir\src\window.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\window.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/window.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\window.c > CMakeFiles\glfw.dir\src\window.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\window.c > CMakeFiles\glfw.dir\src\window.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/window.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\window.c -o CMakeFiles\glfw.dir\src\window.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\window.c -o CMakeFiles\glfw.dir\src\window.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_init.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_init.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj -MF CMakeFiles\glfw.dir\src\win32_init.c.obj.d -o CMakeFiles\glfw.dir\src\win32_init.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.obj -MF CMakeFiles\glfw.dir\src\win32_init.c.obj.d -o CMakeFiles\glfw.dir\src\win32_init.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_init.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_init.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_init.c > CMakeFiles\glfw.dir\src\win32_init.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_init.c > CMakeFiles\glfw.dir\src\win32_init.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_init.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_init.c -o CMakeFiles\glfw.dir\src\win32_init.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_init.c -o CMakeFiles\glfw.dir\src\win32_init.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_joystick.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_joystick.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj -MF CMakeFiles\glfw.dir\src\win32_joystick.c.obj.d -o CMakeFiles\glfw.dir\src\win32_joystick.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.obj -MF CMakeFiles\glfw.dir\src\win32_joystick.c.obj.d -o CMakeFiles\glfw.dir\src\win32_joystick.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_joystick.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_joystick.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_joystick.c > CMakeFiles\glfw.dir\src\win32_joystick.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_joystick.c > CMakeFiles\glfw.dir\src\win32_joystick.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_joystick.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_joystick.c -o CMakeFiles\glfw.dir\src\win32_joystick.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_joystick.c -o CMakeFiles\glfw.dir\src\win32_joystick.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_monitor.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_monitor.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj -MF CMakeFiles\glfw.dir\src\win32_monitor.c.obj.d -o CMakeFiles\glfw.dir\src\win32_monitor.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.obj -MF CMakeFiles\glfw.dir\src\win32_monitor.c.obj.d -o CMakeFiles\glfw.dir\src\win32_monitor.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_monitor.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_monitor.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_monitor.c > CMakeFiles\glfw.dir\src\win32_monitor.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_monitor.c > CMakeFiles\glfw.dir\src\win32_monitor.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_monitor.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_monitor.c -o CMakeFiles\glfw.dir\src\win32_monitor.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_monitor.c -o CMakeFiles\glfw.dir\src\win32_monitor.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_time.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_time.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj -MF CMakeFiles\glfw.dir\src\win32_time.c.obj.d -o CMakeFiles\glfw.dir\src\win32_time.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.obj -MF CMakeFiles\glfw.dir\src\win32_time.c.obj.d -o CMakeFiles\glfw.dir\src\win32_time.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_time.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_time.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_time.c > CMakeFiles\glfw.dir\src\win32_time.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_time.c > CMakeFiles\glfw.dir\src\win32_time.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_time.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_time.c -o CMakeFiles\glfw.dir\src\win32_time.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_time.c -o CMakeFiles\glfw.dir\src\win32_time.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_thread.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_thread.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj -MF CMakeFiles\glfw.dir\src\win32_thread.c.obj.d -o CMakeFiles\glfw.dir\src\win32_thread.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.obj -MF CMakeFiles\glfw.dir\src\win32_thread.c.obj.d -o CMakeFiles\glfw.dir\src\win32_thread.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_thread.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_thread.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_thread.c > CMakeFiles\glfw.dir\src\win32_thread.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_thread.c > CMakeFiles\glfw.dir\src\win32_thread.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_thread.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_thread.c -o CMakeFiles\glfw.dir\src\win32_thread.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_thread.c -o CMakeFiles\glfw.dir\src\win32_thread.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/win32_window.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/win32_window.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj -MF CMakeFiles\glfw.dir\src\win32_window.c.obj.d -o CMakeFiles\glfw.dir\src\win32_window.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.obj -MF CMakeFiles\glfw.dir\src\win32_window.c.obj.d -o CMakeFiles\glfw.dir\src\win32_window.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_window.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/win32_window.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_window.c > CMakeFiles\glfw.dir\src\win32_window.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_window.c > CMakeFiles\glfw.dir\src\win32_window.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/win32_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/win32_window.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\win32_window.c -o CMakeFiles\glfw.dir\src\win32_window.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\win32_window.c -o CMakeFiles\glfw.dir\src\win32_window.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/wgl_context.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/wgl_context.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj -MF CMakeFiles\glfw.dir\src\wgl_context.c.obj.d -o CMakeFiles\glfw.dir\src\wgl_context.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\wgl_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.obj -MF CMakeFiles\glfw.dir\src\wgl_context.c.obj.d -o CMakeFiles\glfw.dir\src\wgl_context.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\wgl_context.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/wgl_context.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\wgl_context.c > CMakeFiles\glfw.dir\src\wgl_context.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\wgl_context.c > CMakeFiles\glfw.dir\src\wgl_context.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/wgl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/wgl_context.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\wgl_context.c -o CMakeFiles\glfw.dir\src\wgl_context.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\wgl_context.c -o CMakeFiles\glfw.dir\src\wgl_context.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/egl_context.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/egl_context.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj -MF CMakeFiles\glfw.dir\src\egl_context.c.obj.d -o CMakeFiles\glfw.dir\src\egl_context.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\egl_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.obj -MF CMakeFiles\glfw.dir\src\egl_context.c.obj.d -o CMakeFiles\glfw.dir\src\egl_context.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\egl_context.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/egl_context.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\egl_context.c > CMakeFiles\glfw.dir\src\egl_context.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\egl_context.c > CMakeFiles\glfw.dir\src\egl_context.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/egl_context.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\egl_context.c -o CMakeFiles\glfw.dir\src\egl_context.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\egl_context.c -o CMakeFiles\glfw.dir\src\egl_context.c.s
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/flags.make
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/includes_C.rsp
-box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/extern/glfw/src/osmesa_context.c
+box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: C:/Users/amirf/Documents/padi23_05/box2d-main/extern/glfw/src/osmesa_context.c
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj: box2d-main/extern/glfw/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj -MF CMakeFiles\glfw.dir\src\osmesa_context.c.obj.d -o CMakeFiles\glfw.dir\src\osmesa_context.c.obj -c C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\osmesa_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj -MF CMakeFiles\glfw.dir\src\osmesa_context.c.obj.d -o CMakeFiles\glfw.dir\src\osmesa_context.c.obj -c C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\osmesa_context.c
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/src/osmesa_context.c.i"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\osmesa_context.c > CMakeFiles\glfw.dir\src\osmesa_context.c.i
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\osmesa_context.c > CMakeFiles\glfw.dir\src\osmesa_context.c.i
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/src/osmesa_context.c.s"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw\src\osmesa_context.c -o CMakeFiles\glfw.dir\src\osmesa_context.c.s
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && C:\Users\amirf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw\src\osmesa_context.c -o CMakeFiles\glfw.dir\src\osmesa_context.c.s
 
 # Object files for target glfw
 glfw_OBJECTS = \
@@ -331,19 +331,19 @@ box2d-main/bin/libglfw.a: box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/egl_con
 box2d-main/bin/libglfw.a: box2d-main/extern/glfw/CMakeFiles/glfw.dir/src/osmesa_context.c.obj
 box2d-main/bin/libglfw.a: box2d-main/extern/glfw/CMakeFiles/glfw.dir/build.make
 box2d-main/bin/libglfw.a: box2d-main/extern/glfw/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library ..\..\bin\libglfw.a"
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean_target.cmake
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glfw.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amirf\Documents\padi23_05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library ..\..\bin\libglfw.a"
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean_target.cmake
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glfw.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/build: box2d-main/bin/libglfw.a
 .PHONY : box2d-main/extern/glfw/CMakeFiles/glfw.dir/build
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/clean:
-	cd /d C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean.cmake
+	cd /d C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean.cmake
 .PHONY : box2d-main/extern/glfw/CMakeFiles/glfw.dir/clean
 
 box2d-main/extern/glfw/CMakeFiles/glfw.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\padi23_05\project_a C:\Users\amirf\Documents\padi23_05\project_a\box2d-main\extern\glfw C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw C:\Users\amirf\Documents\padi23_05\project_a\cmake-build-debug\box2d-main\extern\glfw\CMakeFiles\glfw.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\amirf\Documents\padi23_05 C:\Users\amirf\Documents\padi23_05\box2d-main\extern\glfw C:\Users\amirf\Documents\padi23_05\cmake-build-debug C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw C:\Users\amirf\Documents\padi23_05\cmake-build-debug\box2d-main\extern\glfw\CMakeFiles\glfw.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : box2d-main/extern/glfw/CMakeFiles/glfw.dir/depend
 

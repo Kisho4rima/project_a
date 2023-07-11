@@ -6,17 +6,21 @@
 #include "EndScreen.h"
 #include "../Entites/Player.h"
 #include "../Entites/Boss.h"
+#include "../Entites/FireStream.h"
 #include "../Components/MovementComponent.h"
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
+#include <cstdlib>
 
+
+class FireStream;
 
 class GameState :
         public State
 {
 public:
-    GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states);
+    GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states, sf::Music &music);
     virtual ~GameState();
 
     //Functions
@@ -29,6 +33,9 @@ public:
 
     float gameEndTime;
     bool gameJustEnded;
+    bool gameOver;    //handled die FireStreams, damit die nachdem man try again drückt wieder genereiert werden
+
+
 
 
 private:
@@ -37,7 +44,6 @@ private:
     PauseMenu *pmenu;
     sf::Font font;
     EndScreen *endScreen;
-    GameState *gameState;
 
 
     sf::RectangleShape ground;
@@ -45,21 +51,25 @@ private:
     sf::RectangleShape background;
 
     sf::Clock clock;
-
     sf::Clock gameTime;
     sf::Text timerText;
     sf::Time pausedTime;
     sf::Time timeBeforePause;
+    sf::Clock deltaTimeClock;
 
     //Sound
-    sf::Music gameStateMusic;
-    sf::Music victoryTheme;
-    sf::Music defeatTheme;
+    sf::Music &backgroundTheme;
+
+
     bool victoryThemeStarted;
     bool defeatThemeStarted;
 
-
-    float elapsedTime;
+    std::vector<FireStream> fireStreams;
+    float fireStreamTimer;
+    float fireStreamSpawnInterval;
+    int activeFireStreamIndex;
+    int FIRESTREAM_WIDTH;
+    int FIRESTREAM_HEIGHT;
 
     //Functions
     void initKeybinds();
@@ -76,6 +86,7 @@ private:
     void playTime();
     void render(sf::RenderWindow *target);
     void initBoss();
+    void updateFireStreams();
 };
 
 

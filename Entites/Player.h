@@ -3,7 +3,6 @@
 
 #include "Entity.h"
 #include <SFML/Graphics.hpp>
-#include "box2d/box2d.h"
 #include "Boss.h"
 
 class Boss;
@@ -16,14 +15,12 @@ public:
     Player(float x, float y, sf::Texture &texture);
     virtual ~Player();
 
-    float gravity;
     float jumpForce;
     bool isJumping;
     float jumpCooldown;
 
     //Functions
     virtual void update(const float &deltaTime);
-    void jump();
     void pushback();
 
 
@@ -35,6 +32,8 @@ public:
     void updateHealthBar(sf::RectangleShape &healthBar);
     int getHealth();
     bool isDying;
+    sf::Music victoryTheme;
+    void playVictoryTheme();
 
     sf::Text playerName;
 

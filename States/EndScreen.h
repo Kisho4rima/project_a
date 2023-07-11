@@ -34,7 +34,6 @@ public:
     sf::Text menuText;
     sf::Text requiredTime;
 
-
 private:
     sf::Font &font;
     sf::RectangleShape background;

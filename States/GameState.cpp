@@ -3,8 +3,8 @@
 #include <iomanip>
 
 //Constructor
-GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states)
-    : State(window, supportedKeys, states)
+GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*> *states, sf::Music &music)
+    : State(window, supportedKeys, states), backgroundTheme(music)
 {
     this->initKeybinds();
     this->initFonts();
@@ -41,6 +41,14 @@ GameState::GameState(sf::RenderWindow* window, std::map<std::string, int>* suppo
     this->victoryThemeStarted = false;
     this->defeatThemeStarted = false;
 
+    for (int i = 0; i < 5; i++) {
+        this->fireStreams.emplace_back();
+    }
+    this->activeFireStreamIndex = 0;
+    this->fireStreamSpawnInterval = 1.5;
+    this->gameOver = false;
+    this->FIRESTREAM_WIDTH = 2000;
+    this->FIRESTREAM_HEIGHT = 100;
 }
 
 //Destructor
@@ -49,7 +57,6 @@ GameState::~GameState()
     delete this->pmenu;
     delete this->player;
     delete this->boss;
-    //delete this->endGameMenu;
 }
 
 void GameState::update(const float& deltaTime)
@@ -77,6 +84,7 @@ void GameState::update(const float& deltaTime)
 
         this->endScreen->update(this->mousePosView);
         this->updateEndScreenButtons();
+        this->updateFireStreams();
     }
     else
     {
@@ -85,41 +93,36 @@ void GameState::update(const float& deltaTime)
 
     }
 
-    // Decrement the jump cooldown
-    if (this->player->jumpCooldown > 0.f)
-    {
-        this->player->jumpCooldown -= deltaTime;
-    }
-
     //Um die Zeit zu kriegen die man dann im EndScreen anzeigen kann
     if ((this->player->isDying || this->boss->isDying) && !this->gameJustEnded)
     {
         this->gameEndTime = this->gameTime.getElapsedTime().asSeconds();
         this->endScreen->setRequiredTime(this->gameEndTime);
         this->gameJustEnded = true;
+        this->backgroundTheme.stop();
+        this->gameOver = true;
     }
 
-    //Je nachdem ob der Boss oder Player gewinnt, steht da dann Victory oder defeat
-    if (!victoryTheme.openFromFile("../soundtrack/victoryTheme.wav"))
+    if (this->player->isDying && !this->defeatThemeStarted)
     {
-        std::cout << "Could not load victoryTheme";
-    }
-    if (!defeatTheme.openFromFile("../soundtrack/defeatTheme.wav"))
-    {
-        std::cout << "could not load defeatTheme";
-    }
-
-    if (this->player->isDying)
-    {
-        this->defeatTheme.play();
+        this->boss->defeatTheme.play();
         this->defeatThemeStarted = true;
+
     }
-    else if (this->boss->isDying)
+    else if (this->boss->isDying && !this->victoryThemeStarted)
     {
-        this->victoryTheme.play();
+        this->player->victoryTheme.play();
         this->victoryThemeStarted = true;
     }
 
+    //Kollision zwischen Player und den FireStreams
+    for (auto& fireStream : this->fireStreams)
+    {
+        if (fireStream.isActive() && fireStream.getGlobalBounds().intersects(this->player->collisionBox.getGlobalBounds()))
+        {
+            this->player->playerHealth = 0;
+        }
+    }
 }
 
 void GameState::render(sf::RenderTarget* target)
@@ -132,17 +135,16 @@ void GameState::render(sf::RenderTarget* target)
     target->draw(this->background);
     this->player->render(target);
     this->boss->render(target);
-    target->draw(this->player->collisionBox);
-    target->draw(this->boss->collisionBoxBoss);
+    //target->draw(this->player->collisionBox);
+    //target->draw(this->boss->collisionBoxBoss);
     target->draw(this->boss->attackCollisionBox);
-    target->draw(this->boss->pushBackCollision);
+    //target->draw(this->boss->pushBackCollision);
     target->draw(this->player->playerName);
     target->draw(this->player->healthBar);
     target->draw(this->timerText);
     target->draw(this->boss->bossName);
     target->draw(this->boss->bossHealthBar);
     target->draw(this->player->hitbox);
-
 
     if (this->paused)
     {
@@ -158,6 +160,14 @@ void GameState::render(sf::RenderTarget* target)
     {
         this->endScreen->setMenuText("VICTORY");
         this->endScreen->render(this->window);
+    }
+
+    for (auto& fireStream : this->fireStreams)
+    {
+        if (!this->gameJustEnded)
+        {
+            fireStream.render(window);
+        }
     }
 }
 
@@ -175,16 +185,6 @@ void GameState::updatePlayerInput(const float &deltaTime)
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("Move_Down"))))
         this->player->move(0.f, 1.f, deltaTime);
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))  // Ändern Sie Space zu der Taste, die Sie zum Springen verwenden möchten
-    {
-        if (this->player->jumpCooldown <= 0.f)
-        {
-            this->player->jump();
-            this->player->jumpCooldown = 1.f;  // Reset the jump cooldown
-        }
-    }
-
 }
 
 //initializer functions
@@ -257,12 +257,12 @@ void GameState::updateInput(const float &deltaTime)
         if (!this->paused)
         {
             this->pauseState();
-            this->timeBeforePause = gameTime.getElapsedTime();  // Speichern Sie den Zeitpunkt der Pause
+            this->timeBeforePause = gameTime.getElapsedTime();  // Speicher den Zeitpunkt der Pause
         }
         else
         {
             this->unpauseState();
-            this->pausedTime += gameTime.getElapsedTime() - this->timeBeforePause;  // Addieren Sie die Dauer der Pause zur Gesamtpausenzeit
+            this->pausedTime += gameTime.getElapsedTime() - this->timeBeforePause;  // Addieren die Dauer der Pause zur Gesamtpausenzeit
         }
     }
 }
@@ -301,9 +301,11 @@ void GameState::updateEndScreenButtons()
 
     if (this->endScreen->isButtonPressed("Try Again"))
     {
+        this->gameOver = true;
         this->endState();
         // Erstelle einen neuen GameState
-        this->states->push(new GameState(window, supportedKeys, states));
+        this->states->push(new GameState(window, supportedKeys, states, backgroundTheme));
+        this->backgroundTheme.play();
     }
 }
 
@@ -325,12 +327,9 @@ void GameState::checkPlayerCollisionWithGround()
         float offsetY = this->player->collisionBox.getPosition().y - this->player->sprite.getPosition().y;
         this->player->setPosition(this->player->sprite.getPosition().x, groundBox.top - playerCollisionBox.height - offsetY);
 
-        this->player->gravity = 500;
         this->player->isJumping = false;
-    }
-    else
-    {
-        this->player->gravity = 500.8f;
+    } else if (playerCollisionBox.top + playerCollisionBox.height + 10 < groundBox.top) {
+        this->player->isJumping = true;
     }
 }
 
@@ -372,14 +371,29 @@ void GameState::playTime()
     timerText.setString(ss.str());
 }
 
+void GameState::updateFireStreams()
+{
+    if (!this->gameOver) {
+        float deltaTime = deltaTimeClock.restart().asSeconds();
+        this->fireStreamTimer += deltaTime;
 
+        if (this->fireStreamTimer > this->fireStreamSpawnInterval) {
+            //Vorherige firestream löschen
+            if (!this->fireStreams.empty()) {
+                this->fireStreams[this->activeFireStreamIndex].setActive(false);
+            }
 
+            //Den nächsten FireStream generieren und seine Position setzen
+            this->activeFireStreamIndex = (this->activeFireStreamIndex + 1) % this->fireStreams.size();
+            this->fireStreams[this->activeFireStreamIndex].setActive(true);
 
+            // Zufällige Position für den FireStream generieren und sicherstellen, dass es nur im sichtbaren Teil ist.
+            float x = static_cast<float>(rand() % (this->window->getSize().x - FIRESTREAM_WIDTH));
+            float y = static_cast<float>(rand() % (this->window->getSize().y - FIRESTREAM_HEIGHT));
 
+            this->fireStreams[this->activeFireStreamIndex].setPosition(x, y);
 
-
-
-
-
-
-
+            this->fireStreamTimer = 0.f;
+        }
+    }
+}

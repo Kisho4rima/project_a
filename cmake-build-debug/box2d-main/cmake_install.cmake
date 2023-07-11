@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/amirf/Documents/padi23_05/project_a/box2d-main
+# Install script for directory: C:/Users/amirf/Documents/padi23_05/box2d-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/amirf/Documents/padi23_05/project_a/box2d-main/include/box2d")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/amirf/Documents/padi23_05/box2d-main/include/box2d")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/src/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/unit-test/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/extern/glad/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/extern/glfw/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/extern/imgui/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/extern/sajson/cmake_install.cmake")
-  include("C:/Users/amirf/Documents/padi23_05/project_a/cmake-build-debug/box2d-main/testbed/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/src/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/unit-test/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/extern/glad/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/extern/glfw/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/extern/imgui/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/extern/sajson/cmake_install.cmake")
+  include("C:/Users/amirf/Documents/padi23_05/cmake-build-debug/box2d-main/testbed/cmake_install.cmake")
 
 endif()
 
